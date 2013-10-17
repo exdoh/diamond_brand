@@ -1,4 +1,119 @@
-$textcolor: red;  
-p {    
-   color: $textcolor; 
+@import "compass/css3";
+
+$text-en-h1: 34px;
+$text-en-h2: 28px;
+$text-en-h3: 24px;
+$text-en-h4: 20px;
+$text-en-standard: 18px;
+$text-en-small: 16px;
+$text-en-footer: 14px;
+
+$text-th-h1: 42px;
+$text-th-h2: 34px;
+$text-th-h3: 30px;
+$text-th-h4: 24px;
+$text-th-standard: 22px;
+$text-th-small: 20px;
+$text-th-footer: 18px;
+
+$color-red: #ed1b24;
+$color-orange: #ff921a;
+
+body.en {
+    font-family: "Helvetica Neue";
+    color:white;
+    h1,h2,h3,h4 {
+      font-weight : lighter;
+    }
+    h1 {
+      font-size: $text-en-h1;
+    }
+    h2 {
+      font-size: $text-en-h2;
+    }
+    h3 {
+      font-size: $text-en-h3;
+    }
+    h4 {
+      font-size: $text-en-h4;
+    }
+    .font-standard {
+      font-size: $text-en-standard;
+    }
+    .font-small {
+      font-size: $text-en-small;
+    }
+    .font-footer {
+      font-size: $text-en-footer;
+    }
+    #carousel p {
+      font-size: $text-en-h3;
+    }
+}
+
+body.th {
+    h1 {
+      font-size: $text-th-h1;
+    }
+    h2 {
+      font-size: $text-th-h2;
+    }
+    h3 {
+      font-size: $text-th-h3;
+    }
+    h4 {
+      font-size: $text-th-h4;
+    }
+    .font-standard {
+      font-size: $text-th-standard;
+    }
+    .font-small {
+      font-size: $text-th-small;
+    }
+    .font-footer {
+      font-size: $text-th-footer;
+    }
+}
+
+@mixin background($imgpath,$size,$repeat) {
+    background: {
+        image: url($imgpath);
+        size: $size;
+        repeat: $repeat;
+    }
+}
+#banner {
+    @include background('../images/bg-bigbanner.png',100%,'no-repeat');
+}
+
+#logo {
+  padding: 16px 0 0 0;  
+}
+
+.container {
+  img {
+    float: left;
+  }  
+}
+
+.navbar {
+  .container {
+    width: 940px;
+  }
+}
+
+.navbar-inner { 
+    background-color: $color-orange;
+    background-image: none;
+    @include opacity(0.7);
+}
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: $color-red;
+    color: white;
+}
+
+.navbar .nav > li > a {
+    color: white;
+    text-shadow: none;
 }

@@ -1,3 +1,32 @@
-p {
-  color: red;
-}
+body.en { font-family: "Helvetica Neue"; color: white; }
+body.en h1, body.en h2, body.en h3, body.en h4 { font-weight: lighter; }
+body.en h1 { font-size: 34px; }
+body.en h2 { font-size: 28px; }
+body.en h3 { font-size: 24px; }
+body.en h4 { font-size: 20px; }
+body.en .font-standard { font-size: 18px; }
+body.en .font-small { font-size: 16px; }
+body.en .font-footer { font-size: 14px; }
+body.en #carousel p { font-size: 24px; }
+
+body.th h1 { font-size: 42px; }
+body.th h2 { font-size: 34px; }
+body.th h3 { font-size: 30px; }
+body.th h4 { font-size: 24px; }
+body.th .font-standard { font-size: 22px; }
+body.th .font-small { font-size: 20px; }
+body.th .font-footer { font-size: 18px; }
+
+#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100%; background-repeat: "no-repeat"; }
+
+#logo { padding: 16px 0 0 0; }
+
+.container img { float: left; }
+
+.navbar .container { width: 940px; }
+
+.navbar-inner { background-color: #ff921a; background-image: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus { background-color: #ed1b24; color: white; }
+
+.navbar .nav > li > a { color: white; text-shadow: none; }
