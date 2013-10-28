@@ -1,4 +1,4 @@
-@import "compass/css3";
+@import "function.scss";
 
 $text-en-h1: 34px;
 $text-en-h2: 28px;
@@ -18,13 +18,22 @@ $text-th-footer: 18px;
 
 $color-red: #ed1b24;
 $color-orange: #ff921a;
+$color-grayd: #ddd;
+$color-gray5: #555;
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Circular";
+    src: url(../fonts/Circular.ttf);
+}
 
 body.en {
-    font-family: "Helvetica Neue";
-    color:white;
-    h1,h2,h3,h4 {
-      font-weight : lighter;
-    }
+    font-family: "Roboto Light";
+    color: white;
+   
     h1 {
       font-size: $text-en-h1;
     }
@@ -43,15 +52,19 @@ body.en {
     .font-small {
       font-size: $text-en-small;
     }
-    .font-footer {
-      font-size: $text-en-footer;
-    }
     #carousel p {
       font-size: $text-en-h3;
+    }
+    .footer {
+      font-size: $text-en-footer;
+      background-color: $color-orange;
+      line-height: 50px;
     }
 }
 
 body.th {
+    font-family: "Circular";
+    color: white;
     h1 {
       font-size: $text-th-h1;
     }
@@ -70,30 +83,26 @@ body.th {
     .font-small {
       font-size: $text-th-small;
     }
-    .font-footer {
+    .footer {
       font-size: $text-th-footer;
+      background-color: $color-orange;
+      line-height: 50px;
     }
 }
 
-@mixin background($imgpath,$size,$repeat) {
-    background: {
-        image: url($imgpath);
-        size: $size;
-        repeat: $repeat;
-    }
-}
 #banner {
     @include background('../images/bg-bigbanner.png',100%,'no-repeat');
 }
 
 #logo {
-  padding: 16px 0 0 0;  
-}
-
-.container {
+  padding: 16px 0 28px 0; 
   img {
     float: left;
+    margin-right: 10px;
   }  
+  h1 {
+    margin-top: 8px;
+  } 
 }
 
 .navbar {
@@ -102,13 +111,17 @@ body.th {
   }
 }
 
-.navbar-inner { 
-    background-color: $color-orange;
-    background-image: none;
-    @include opacity(0.7);
+.navbar-inner {
+    border: 0;
+    border-radius: 0; 
+    background: rgba($color-orange,0.7);
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: $color-red;
+    color: white;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     background-color: $color-red;
     color: white;
 }
@@ -116,4 +129,80 @@ body.th {
 .navbar .nav > li > a {
     color: white;
     text-shadow: none;
+}
+
+.btn {
+    background: rgba(#666,0.6);
+}
+
+#carousel {
+    padding: 40px 0;      
+    input[type=button] {
+      color: white;
+      background-color: $color-gray5;
+      opacity: (0.3);
+    }
+    p {
+      line-height: 30px;
+      margin: 20px 0 30px;
+    }
+}
+
+#quality_products {
+    background-color : $color-grayd;
+    padding: 40px 0;
+}
+#moredetail {
+    @include roundrect($text-en-standard,0.5em,0.6em);  
+    text-align: center;
+    cursor: pointer;
+}
+
+#home_mid {
+  color: $color-gray5;
+  text-align: center;
+  h2 {
+    margin-bottom: 40px;
+  }  
+  .span4 {
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  }
+  img {
+     
+  }
+  p {//edit 2 lang
+    font-size: $text-en-standard;
+  }
+}
+
+.border-img {
+      border-radius: 500px;
+      border: solid 7px #bbb;
+      padding: 7px;
+      margin-left: 12px;
+      margin-right: 12px;
+}
+
+#moreinfo {
+    @include background('../images/bg-moreinfo.png',100%,'no-repeat');
+    padding: 40px 0 50px;
+    text-align: center;
+    h1 {
+      margin-bottom: 24px;
+    }
+    a {
+      text-decoration:none;
+    }
+    
+}
+#tel {
+    @include roundrect($text-en-h3);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#email {
+    @include roundrect($text-en-h3);  
 }

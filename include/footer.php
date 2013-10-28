@@ -1,3 +1,8 @@
+    <div class="footer">
+    	<div class="container">
+    		&copy Charoensarp 2013
+    	</div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -9,11 +14,40 @@
     <script src="js/common.js"></script>
 	<script src="js/diamond_brand.js"></script>
 	<script type="text/javascript">
-		var dianmond_brand = new dianmond_brand();
+		var diamond_brand = new diamond_brand();
         	
     	$(document).ready(function(){
-	        dianmond_brand.reset();
+	        diamond_brand.reset();
         });
+        
+        $(function() {
+		    // Stick the #nav to the top of the window
+		    var nav = $('#navbar');
+		    var navHomeY = nav.offset().top;
+		    var isFixed = false;
+		    var $w = $(window);
+		    $w.scroll(function() {
+		        var scrollTop = $w.scrollTop();
+		        var shouldBeFixed = scrollTop > navHomeY;
+		        if (shouldBeFixed && !isFixed) {
+		            nav.css({
+		                position: 'fixed',
+		                top: 0,
+		                left: nav.offset().left,
+		                width: nav.width()
+		            });
+		            isFixed = true;
+		        }
+		        else if (!shouldBeFixed && isFixed)
+		        {
+		            nav.css({
+		                position: 'static'
+		            });
+		            isFixed = false;
+		        }
+		    });
+		});
+
     </script>
     
   </body>

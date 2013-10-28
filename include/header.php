@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Diamond Brand</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
 	
 	<!-- SASS style CSS -->
+	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -38,7 +39,7 @@
 				<div class="navbar-inner">
 					<div class="container">					
 						<ul class="nav">
-							<li id="home">
+							<li id="home" class="active">
 								<a href="#">Home</a>
 							</li>
 							<li id="products" class="dropdown">
@@ -56,14 +57,15 @@
 						</ul>
 					
 					
-						<div class="btn-group pull-right open">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-						    	Action <span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu" role="menu">
-						    	<li><a href="#">English</a></li>
-						    	<li><a href="#">Thai</a></li>
-					    	</ul>
+						<div class="btn-group pull-right">
+						   <button class="btn dropdown-toggle" data-toggle="dropdown">
+						     	<img src="images/ic-lang-en.png">
+						     	<span class="caret"></span>
+						   </button>
+						   <ul class="dropdown-menu">
+							    <li id="english"><a href="#">English</a></li>
+								<li id="thailand"><a href="#">Thailand</a></li>
+						   </ul>
 						</div>
 					</div><!--container-->
 				</div><!--navbar-inner-->

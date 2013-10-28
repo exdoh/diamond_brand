@@ -1,17 +1,30 @@
-function dianmond_brand(){
-
+function diamond_brand(){
+	this.l_nav_en = ['Home','Products','About & Contact'];
+	this.l_nav_th = ['หน้าแรก','สินค้า','เกี่ยวกับเรา'];
+	
+	this.l_en = ['ic-lang-en.png','English','Thailand'];
+	this.l_th = ['ic-lang-th.png','อังกฤษ','ไทย'];
 }
 
-dianmond_brand.prototype.reset = function(){
-	$('#home').attr('onclick','dianmond_brand.click_active("home")');
-	$('#contact').attr('onclick','dianmond_brand.click_active("contact")');
+diamond_brand.prototype.reset = function(){
+	diamond_brand.change_language('en');
+	
+	$('#home').attr('onclick','diamond_brand.click_active("home")');
+	$('#products').attr('onclick','diamond_brand.click_active("products")');
+	$('#contact').attr('onclick','diamond_brand.click_active("contact")');
+	
+	$('#moredetail').attr('onclick','diamond_brand.click_active("moredetail")');
+	
+	$('#english').attr('onclick','diamond_brand.change_language("en")');
+	$('#thailand').attr('onclick','diamond_brand.change_language("th")');
 	
 	//this.getNumdata();
 	
 	//this.render_table_approve_blood_help();	
 }
 
-dianmond_brand.prototype.getNumdata = function(){
+//////Render///////
+diamond_brand.prototype.getNumdata = function(){
 	var param = {
         mode: 'get_num_data',
         approve_status: this.approve_status
@@ -22,17 +35,80 @@ dianmond_brand.prototype.getNumdata = function(){
  	});
 }
 
-//////Render///////
-dianmond_brand.prototype.click_active = function(name){
+diamond_brand.prototype.change_language = function(lang)
+{
+	if(lang == 'en')
+	{
+		$('body').attr('class','en');
+		
+		//menu
+		$('#home a').html(this.l_nav_en[0]);
+		$('#products .dropdown-toggle').html(this.l_nav_en[1] + '<b class="caret"></b>');
+		$('#contact a').html(this.l_nav_en[2]);
+		
+		//language
+		$('#Flag img').attr('src','images/' + this.l_en[0]);
+		$('#english a').html(this.l_en[1]);
+		$('#thailand a').html(this.l_en[2]);
+	} else {
+		$('body').attr('class','th');
+		
+		//menu
+		$('#home a').html(this.l_nav_th[0]);
+		$('#products .dropdown-toggle').html(this.l_nav_th[1] + '<b class="caret"></b>');
+		$('#contact a').html(this.l_nav_th[2]);
+		
+		//language
+		$('#Flag img').attr('src','images/' + this.l_th[0]);
+		$('#english a').html(this.l_th[1]);
+		$('#thailand a').html(this.l_th[2]);
+	}
+}
+
+diamond_brand.prototype.click_active = function(name){
 	if(name == "home")
 	{
+		$('#homepage').show();
+		$('#carousel').show();
+		$('#productspage').hide();
+		$('#aboutpage').hide();
+		
 		$('#home').attr('class','active');
+		$('#products').attr('class','dropdown');
 		$('#contact').attr('class','');
 	} 
+	else if (name == "products") 
+	{
+		/*$('#homepage').hide();
+		$('#carousel').hide();
+		$('#productspage').show();
+		$('#aboutpage').hide();*/
+		
+		$('#home').attr('class','');
+		//$('#products').attr('class','dropdown active');
+		$('#contact').attr('class','');
+		
+	}
 	else if (name == "contact") 
 	{
+		$('#homepage').hide();
+		$('#carousel').hide();
+		$('#productspage').hide();
+		$('#aboutpage').show();
+		
 		$('#home').attr('class','');
+		$('#products').attr('class','dropdown');
 		$('#contact').attr('class','active');
+	}
+	else {
+		$('#homepage').hide();
+		$('#carousel').hide();
+		$('#productspage').show();
+		$('#aboutpage').hide();
+		
+		$('#home').attr('class','');
+		$('#products').attr('class','dropdown active');
+		$('#contact').attr('class','');
 	}
 	
 }
