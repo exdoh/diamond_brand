@@ -1,0 +1,18 @@
+@mixin background($imgpath,$size,$repeat) {
+    background: {
+        image: url($imgpath);
+        size: $size;
+        repeat: $repeat;
+    }
+}
+
+@mixin roundrect($font,$padding-top: 0.8em,$padding-bottom: 1em) {
+        font-size: $font;
+        width: 100%;
+        padding: $padding-top 0 $padding-bottom;
+        
+        color: #fff;
+        background: rgba(#666,0.6);
+        border: 2px rgba(#fff,0.1) solid;
+        border-radius: 5px;
+}
