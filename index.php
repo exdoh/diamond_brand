@@ -114,13 +114,13 @@
 						</div>				
 					</div>
 					<div class="span5">
-						<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
+						<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
 
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
 				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
 				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
 					</div>		
 				</div>	
 			</div>
