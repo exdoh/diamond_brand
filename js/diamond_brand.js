@@ -6,12 +6,13 @@ function diamond_brand(){
 	this.l_th = ['ic-lang-th.png','อังกฤษ','ไทย'];
 }
 
-diamond_brand.prototype.reset = function(){
+diamond_brand.prototype.reset = function()
+{
 	diamond_brand.change_language('en');
 	
 	$('#home').attr('onclick','diamond_brand.click_active("home")');
 	$('#products').attr('onclick','diamond_brand.click_active("products")');
-	$('#contact').attr('onclick','diamond_brand.click_active("contact")');
+	$('#aboutcontact').attr('onclick','diamond_brand.click_active("aboutcontact")');
 	
 	$('#moredetail').attr('onclick','diamond_brand.click_active("moredetail")');
 	
@@ -44,7 +45,7 @@ diamond_brand.prototype.change_language = function(lang)
 		//menu
 		$('#home a').html(this.l_nav_en[0]);
 		$('#products .dropdown-toggle').html(this.l_nav_en[1] + '<b class="caret"></b>');
-		$('#contact a').html(this.l_nav_en[2]);
+		$('#aboutcontact a').html(this.l_nav_en[2]);
 		
 		//language
 		$('#Flag img').attr('src','images/' + this.l_en[0]);
@@ -56,7 +57,7 @@ diamond_brand.prototype.change_language = function(lang)
 		//menu
 		$('#home a').html(this.l_nav_th[0]);
 		$('#products .dropdown-toggle').html(this.l_nav_th[1] + '<b class="caret"></b>');
-		$('#contact a').html(this.l_nav_th[2]);
+		$('#aboutcontact a').html(this.l_nav_th[2]);
 		
 		//language
 		$('#Flag img').attr('src','images/' + this.l_th[0]);
@@ -75,7 +76,7 @@ diamond_brand.prototype.click_active = function(name){
 		
 		$('#home').attr('class','active');
 		$('#products').attr('class','dropdown');
-		$('#contact').attr('class','');
+		$('#aboutcontact').attr('class','');
 	} 
 	else if (name == "products") 
 	{
@@ -86,10 +87,10 @@ diamond_brand.prototype.click_active = function(name){
 		
 		$('#home').attr('class','');
 		//$('#products').attr('class','dropdown active');
-		$('#contact').attr('class','');
+		$('#aboutcontact').attr('class','');
 		
 	}
-	else if (name == "contact") 
+	else if (name == "aboutcontact") 
 	{
 		$('#homepage').hide();
 		$('#carousel').hide();
@@ -98,7 +99,7 @@ diamond_brand.prototype.click_active = function(name){
 		
 		$('#home').attr('class','');
 		$('#products').attr('class','dropdown');
-		$('#contact').attr('class','active');
+		$('#aboutcontact').attr('class','active');
 	}
 	else {
 		$('#homepage').hide();
@@ -108,7 +109,7 @@ diamond_brand.prototype.click_active = function(name){
 		
 		$('#home').attr('class','');
 		$('#products').attr('class','dropdown active');
-		$('#contact').attr('class','');
+		$('#aboutcontact').attr('class','');
 	}
 	
 }

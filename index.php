@@ -14,7 +14,7 @@
 						
 						<div class="row">
 							<div class="span2">
-								<div id="moredetail">more detail</div>
+								<div id="moredetail" class="font-standard">more detail</div>
 							</div>
 						</div>
 					</div>
@@ -34,21 +34,21 @@
 							<img src="images/ph-home-product-left.png" class="img-circle">
 						</div>
 						<div><h3>Concrete Nails</h3></div>
-						<p>content</p>
+						<p class="font-standard">content</p>
 					</div>
 					<div class="span4">
 						<div class="border-img">
 							<img src="images/ph-home-product-mid.png" class="img-circle">
 						</div>
 						<div><h3>Concrete Nails</h3></div>
-						<p>content</p>
+						<p class="font-standard">content</p>
 					</div>
 					<div class="span4">
 						<div class="border-img">
 							<img src="images/ph-home-product-right.png" class="img-circle">
 						</div>
 						<div><h3>Concrete Nails</h3></div>
-						<p>content</p>
+						<p class="font-standard">content</p>
 					</div>
 					
 				</div>
@@ -60,8 +60,8 @@
 				<div class="row">
 					<div class="span8 offset2">
 						<h1>For more infomation</h1>
-						<div id="tel">Tel: (+66)2 455 9204</div>
-						<a href="mailto:cher4ry@gmail.com" target="_top"><div id="email">Email: cher4ry@gmail.com</div></a>
+						<div id="tel" class="font-h3">Tel: (+66)2 455 9204</div>
+						<a href="mailto:cher4ry@gmail.com" target="_top"><div id="email" class="font-h3">Email: cher4ry@gmail.com</div></a>
 					</div>
 				</div>
 			</div>
@@ -91,10 +91,38 @@
 			<div class="container">
 				<div class="row">
 					<div class="span6">
-						<img src="">
+						<img src="images/ph-about.png">
 					</div>
 					<div class="span6">
+						<div class="row">
+							<h2>Charoensarp Iron Wire Factory</h2>	
+							<h4>Some detail about this topic. It should be around 3-4 lines. 
+								 Some detail about this topic. It should be around 3-4 lines.
+								 Some detail about this topic. It should be around 3-4 lines.</h4>
+						</div> 
 						
+						
+						<div id="mapcontact" class="row">
+							<div class="span2">
+								<img src="images/ph-map.png">
+							</div>
+							<div class="span4">
+								<div id="headerinfo" class="font-small subweight">Contact Information</div>
+								<div class="datainfo font-footer">
+									<span id="info_tel" class="subweight">Tel: </span>
+									<span>(+66)2 460 2990</span>
+								</div>
+								<div class="datainfo font-footer">
+									<span id="info_email" class="subweight">Email: </span>
+									<span>charoensarp@domain.com</span>
+								</div>
+								<div class="datainfo font-footer">
+									<span id="info_address" class="subweight">Address: </span>
+									<span id="dataadd">Bangpoo Industrial, 657 Moo2, Soi 1
+										Sukhumvit Rd, Bangpoomai, Muang, Samutprakarn Thailand 10280</span>
+								</div>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -102,24 +130,46 @@
 		
 		<div id="about">
 			<div class="container">
-				<div class="row">
-					<div class="span3">
+				<div id="diamond" class="row">
+					<div class="span3">					
+						<img src="images/logo-diamond.png" class="img-circle">
 					</div>
 					<div class="span9">
+						<h3>Diamond Brand</h3>
+						
+						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. </h4>
+						
 					</div>
 				</div>
 				
-				<div class="row">
+				<div id="eagle" class="row">
 					<div class="span3">
+						<img src="images/logo-eagle.png" class="img-circle">
 					</div>
 					<div class="span9">
+						<h3>Eagle Brand</h3>
+						
+						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines.</h4>
 					</div>
 				</div>
 				
-				<div class="row">
+				<div id="lion" class="row">
 					<div class="span3">
+						<img src="images/logo-lion.png" class="img-circle">
 					</div>
 					<div class="span9">
+						<h3>Lion Brand</h3>
+						
+						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic. It should be around 3-4 lines.</h4>
 					</div>
 				</div>
 			</div>

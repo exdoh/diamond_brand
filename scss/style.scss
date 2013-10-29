@@ -20,6 +20,7 @@ $color-red: #ed1b24;
 $color-orange: #ff921a;
 $color-grayd: #ddd;
 $color-gray5: #555;
+$color-gray3: #333;
 
 @font-face {
     font-family: "Roboto Light";
@@ -43,6 +44,9 @@ body.en {
     h3 {
       font-size: $text-en-h3;
     }
+    .font-h3 {
+      font-size: $text-en-h3;
+    }
     h4 {
       font-size: $text-en-h4;
     }
@@ -52,11 +56,13 @@ body.en {
     .font-small {
       font-size: $text-en-small;
     }
+    .font-footer {
+      font-size: $text-en-footer;
+    }
     #carousel p {
       font-size: $text-en-h3;
     }
     .footer {
-      font-size: $text-en-footer;
       background-color: $color-orange;
       line-height: 50px;
     }
@@ -74,6 +80,9 @@ body.th {
     h3 {
       font-size: $text-th-h3;
     }
+     .font-h3 {
+      font-size: $text-th-h3;
+    }
     h4 {
       font-size: $text-th-h4;
     }
@@ -83,11 +92,17 @@ body.th {
     .font-small {
       font-size: $text-th-small;
     }
-    .footer {
+    .font-footer {
       font-size: $text-th-footer;
+    }
+    .footer {
       background-color: $color-orange;
       line-height: 50px;
     }
+}
+
+.subweight {
+    font-weight: bold;  
 }
 
 #banner {
@@ -106,6 +121,7 @@ body.th {
 }
 
 .navbar {
+  margin-bottom: 0px;
   .container {
     width: 940px;
   }
@@ -136,7 +152,7 @@ body.th {
 }
 
 #carousel {
-    padding: 40px 0;      
+    padding: 60px 0;      
     input[type=button] {
       color: white;
       background-color: $color-gray5;
@@ -153,7 +169,7 @@ body.th {
     padding: 40px 0;
 }
 #moredetail {
-    @include roundrect($text-en-standard,0.5em,0.6em);  
+    @include roundrect(0.5em,0.6em);  
     text-align: center;
     cursor: pointer;
 }
@@ -161,6 +177,9 @@ body.th {
 #home_mid {
   color: $color-gray5;
   text-align: center;
+  h2,h3 {
+    font-weight: bold;
+  }
   h2 {
     margin-bottom: 40px;
   }  
@@ -169,12 +188,6 @@ body.th {
       margin-top: 20px;
       margin-bottom: 5px;
     }
-  }
-  img {
-     
-  }
-  p {//edit 2 lang
-    font-size: $text-en-standard;
   }
 }
 
@@ -199,10 +212,53 @@ body.th {
     
 }
 #tel {
-    @include roundrect($text-en-h3);
+    @include roundrect();
     margin-top: 8px;
     margin-bottom: 8px;
 }
 #email {
-    @include roundrect($text-en-h3);  
+    @include roundrect();  
+}
+
+//aboutpage
+#aboutpage {
+    color: $color-gray3;
+    h2,h3,h4 {
+      
+    }
+    h2,h3 {
+      font-weight: bold;
+    }
+    h2 {
+      margin-bottom: 16px;
+    }
+    h4 {
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+}
+//contact
+#contact {
+    background: $color-grayd;
+    padding: 36px 0;
+}
+#mapcontact {
+    .span2, .span4 {
+        margin-left: 0px;
+    }
+}
+#headerinfo {
+    
+}
+//about
+#about {
+    background: #eee;
+    padding: 40px 0 14px;
+   
+    .img-circle {
+        background: white; 
+    }
+    .row {
+        padding-bottom: 40px;
+    }
 }

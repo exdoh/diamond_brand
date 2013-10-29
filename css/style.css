@@ -6,20 +6,26 @@ body.en { font-family: "Roboto Light"; color: white; }
 body.en h1 { font-size: 34px; }
 body.en h2 { font-size: 28px; }
 body.en h3 { font-size: 24px; }
+body.en .font-h3 { font-size: 24px; }
 body.en h4 { font-size: 20px; }
 body.en .font-standard { font-size: 18px; }
 body.en .font-small { font-size: 16px; }
+body.en .font-footer { font-size: 14px; }
 body.en #carousel p { font-size: 24px; }
-body.en .footer { font-size: 14px; background-color: #ff921a; line-height: 50px; }
+body.en .footer { background-color: #ff921a; line-height: 50px; }
 
 body.th { font-family: "Circular"; color: white; }
 body.th h1 { font-size: 42px; }
 body.th h2 { font-size: 34px; }
 body.th h3 { font-size: 30px; }
+body.th .font-h3 { font-size: 30px; }
 body.th h4 { font-size: 24px; }
 body.th .font-standard { font-size: 22px; }
 body.th .font-small { font-size: 20px; }
-body.th .footer { font-size: 18px; background-color: #ff921a; line-height: 50px; }
+body.th .font-footer { font-size: 18px; }
+body.th .footer { background-color: #ff921a; line-height: 50px; }
+
+.subweight { font-weight: bold; }
 
 #banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100%; background-repeat: "no-repeat"; }
 
@@ -27,6 +33,7 @@ body.th .footer { font-size: 18px; background-color: #ff921a; line-height: 50px;
 #logo img { float: left; margin-right: 10px; }
 #logo h1 { margin-top: 8px; }
 
+.navbar { margin-bottom: 0px; }
 .navbar .container { width: 940px; }
 
 .navbar-inner { border: 0; border-radius: 0; background: rgba(255, 146, 26, 0.7); }
@@ -39,18 +46,18 @@ body.th .footer { font-size: 18px; background-color: #ff921a; line-height: 50px;
 
 .btn { background: rgba(102, 102, 102, 0.6); }
 
-#carousel { padding: 40px 0; }
+#carousel { padding: 60px 0; }
 #carousel input[type=button] { color: white; background-color: #555555; opacity: 0.3; }
 #carousel p { line-height: 30px; margin: 20px 0 30px; }
 
 #quality_products { background-color: #dddddd; padding: 40px 0; }
 
-#moredetail { font-size: 18px; width: 100%; padding: 0.5em 0 0.6em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; text-align: center; cursor: pointer; }
+#moredetail { width: 100%; padding: 0.5em 0 0.6em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; text-align: center; cursor: pointer; }
 
 #home_mid { color: #555555; text-align: center; }
+#home_mid h2, #home_mid h3 { font-weight: bold; }
 #home_mid h2 { margin-bottom: 40px; }
 #home_mid .span4 h3 { margin-top: 20px; margin-bottom: 5px; }
-#home_mid p { font-size: 18px; }
 
 .border-img { border-radius: 500px; border: solid 7px #bbb; padding: 7px; margin-left: 12px; margin-right: 12px; }
 
@@ -58,6 +65,19 @@ body.th .footer { font-size: 18px; background-color: #ff921a; line-height: 50px;
 #moreinfo h1 { margin-bottom: 24px; }
 #moreinfo a { text-decoration: none; }
 
-#tel { font-size: 24px; width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; margin-top: 8px; margin-bottom: 8px; }
+#tel { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; margin-top: 8px; margin-bottom: 8px; }
 
-#email { font-size: 24px; width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; }
+#email { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; }
+
+#aboutpage { color: #333333; }
+#aboutpage h2, #aboutpage h3 { font-weight: bold; }
+#aboutpage h2 { margin-bottom: 16px; }
+#aboutpage h4 { line-height: 26px; margin-bottom: 30px; }
+
+#contact { background: #dddddd; padding: 36px 0; }
+
+#mapcontact .span2, #mapcontact .span4 { margin-left: 0px; }
+
+#about { background: #eee; padding: 40px 0 14px; }
+#about .img-circle { background: white; }
+#about .row { padding-bottom: 40px; }

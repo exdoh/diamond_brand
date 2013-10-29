@@ -51,7 +51,7 @@
 									<li><a href="#">Diamond Concrete Nail</a></li>
 								</ul>
 							</li>
-							<li id="contact">
+							<li id="aboutcontact">
 								<a href="#">About & Contact</a>
 							</li>
 						</ul>

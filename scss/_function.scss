@@ -6,8 +6,7 @@
     }
 }
 
-@mixin roundrect($font,$padding-top: 0.8em,$padding-bottom: 1em) {
-        font-size: $font;
+@mixin roundrect($padding-top: 0.8em,$padding-bottom: 1em) {
         width: 100%;
         padding: $padding-top 0 $padding-bottom;
         
