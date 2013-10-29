@@ -6,8 +6,16 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Add jQuery library -->
     <script src="js/jquery-2.0.3.min.js"></script>
+    <!-- Add mousewheel plugin (this is optional) -->
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	
+	<!-- Add fancyBox main JS files -->
+	<script src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<!-- Add Thumbnail helper (this is optional) -->
+	<script src="fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Include Ajax and Javascript Diamond Brand -->
@@ -47,6 +55,22 @@
 		        }
 		    });
 		});
+		
+		$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
 
     </script>
     

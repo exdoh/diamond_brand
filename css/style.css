@@ -44,7 +44,25 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .navbar .nav > li > a { color: white; text-shadow: none; }
 
-.btn { background: rgba(102, 102, 102, 0.6); }
+.btn-group.open .btn.dropdown-toggle { background: rgba(102, 102, 102, 0.6); }
+
+.btn { background: rgba(102, 102, 102, 0.6); border-bottom-color: #666; }
+
+#navbar .dropdown-menu { background: rgba(238, 238, 238, 0.8); border-radius: 0px; margin: 0; }
+
+.navbar .nav > li > .dropdown-menu:before { display: none; }
+
+.navbar .nav > li > .dropdown-menu:after { display: none; }
+
+.dropdown-menu > li > a:hover { background: rgba(255, 255, 255, 0.6); color: #333333; }
+
+#lang-menu .dropdown-menu { background: rgba(102, 102, 102, 0.6); }
+
+#lang-menu .dropdown-menu > li > a { color: white; }
+
+#lang-menu .dropdown-menu > li > a:hover { background: rgba(102, 102, 102, 0); }
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background: rgba(102, 102, 102, 0.6); }
 
 #carousel { padding: 60px 0; }
 #carousel input[type=button] { color: white; background-color: #555555; opacity: 0.3; }
@@ -69,6 +87,17 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 #email { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; }
 
+#productspage { color: #333333; }
+#productspage .span6 { width: 450px; }
+#productspage h2 { font-weight: bold; margin-bottom: 16px; }
+#productspage h4 { line-height: 24px; margin-bottom: 16px; }
+
+.two-col { background: #dddddd; padding: 34px 0; }
+
+.two-col-revese { background: #eeeeee; padding: 34px 0; }
+
+.product-tel { background: #d0d0d0; margin-top: 14px; padding: 8px 22px; border-radius: 20px; width: 34%; }
+
 #aboutpage { color: #333333; }
 #aboutpage h2, #aboutpage h3 { font-weight: bold; }
 #aboutpage h2 { margin-bottom: 16px; }
@@ -78,6 +107,6 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 #mapcontact .span2, #mapcontact .span4 { margin-left: 0px; }
 
-#about { background: #eee; padding: 40px 0 14px; }
+#about { background: #eeeeee; padding: 40px 0 14px; }
 #about .img-circle { background: white; }
 #about .row { padding-bottom: 40px; }

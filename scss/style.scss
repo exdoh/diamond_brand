@@ -19,6 +19,7 @@ $text-th-footer: 18px;
 $color-red: #ed1b24;
 $color-orange: #ff921a;
 $color-grayd: #ddd;
+$color-graye: #eee;
 $color-gray5: #555;
 $color-gray3: #333;
 
@@ -147,7 +148,43 @@ body.th {
     text-shadow: none;
 }
 
+.btn-group.open .btn.dropdown-toggle {
+    background: rgba(#666,0.6);
+}
+
 .btn {
+    background: rgba(#666,0.6);
+    border-bottom-color: #666;
+}
+
+#navbar .dropdown-menu {
+    background: rgba($color-graye,0.8);
+    border-radius: 0px;
+    margin: 0;
+}
+
+.navbar .nav > li > .dropdown-menu:before {
+    display: none;
+}
+.navbar .nav > li > .dropdown-menu:after {
+    display: none;  
+}
+.dropdown-menu > li > a:hover {
+    background: rgba(#fff,0.6);
+    color: $color-gray3;
+}
+
+#lang-menu .dropdown-menu {
+    background: rgba(#666,0.6);
+}
+#lang-menu .dropdown-menu > li > a {
+    color: white;
+}
+#lang-menu .dropdown-menu > li > a:hover {
+    background: rgba(#666,0.0);
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
     background: rgba(#666,0.6);
 }
 
@@ -220,6 +257,37 @@ body.th {
     @include roundrect();  
 }
 
+//productpage
+#productspage {
+    color: $color-gray3;
+    .span6 {
+        width: 450px;
+    }
+    h2 {
+        font-weight: bold;  
+        margin-bottom: 16px;
+    }
+    h4 {
+        line-height: 24px;  
+        margin-bottom: 16px;
+    }
+}
+.two-col {
+    background: $color-grayd;
+    padding: 34px 0;
+}
+.two-col-revese {
+    background: $color-graye;
+    padding: 34px 0;
+}
+.product-tel {
+    background: #d0d0d0;
+    margin-top: 14px;
+    padding: 8px 22px;  
+    border-radius: 20px;
+    width: 34%;
+}
+
 //aboutpage
 #aboutpage {
     color: $color-gray3;
@@ -247,12 +315,9 @@ body.th {
         margin-left: 0px;
     }
 }
-#headerinfo {
-    
-}
 //about
 #about {
-    background: #eee;
+    background: $color-graye;
     padding: 40px 0 14px;
    
     .img-circle {

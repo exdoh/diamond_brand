@@ -12,6 +12,8 @@ diamond_brand.prototype.reset = function()
 	
 	$('#home').attr('onclick','diamond_brand.click_active("home")');
 	$('#products').attr('onclick','diamond_brand.click_active("products")');
+	$('#menu-diamond').attr('onclick','diamond_brand.click_active("banner")');
+	$('#menu-eagle').attr('onclick','diamond_brand.click_active("eagle")');
 	$('#aboutcontact').attr('onclick','diamond_brand.click_active("aboutcontact")');
 	
 	$('#moredetail').attr('onclick','diamond_brand.click_active("moredetail")');
@@ -110,6 +112,10 @@ diamond_brand.prototype.click_active = function(name){
 		$('#home').attr('class','');
 		$('#products').attr('class','dropdown active');
 		$('#aboutcontact').attr('class','');
+		
+		$('html,body').animate({
+        	scrollTop: $("#"+name).offset().top},
+        2000);
 	}
 	
 }

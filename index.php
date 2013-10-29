@@ -1,13 +1,13 @@
 <?php require("include/header.php");?>
 
-		<div id="carousel" style="display: none">
+		<div id="carousel" style="display: block">
 			<div class="container">
 				
 				<div class="row">
 					<div class="span5">
 						<img src="images/ph-bigbanner-product.png">
 					</div>
-					<div class="span6">
+					<div class="span7">
 						<h1>The best concrete nail</h1>
 						
 						<p>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.</p>
@@ -23,7 +23,7 @@
 		</div><!--carousel-->
 	</div><!--banner-->
 	
-	<div id="homepage" style="display: none">
+	<div id="homepage" style="display: block">
 		<div id="quality_products">
 			<div class="container">
 				<div id="home_mid" class="row">
@@ -69,19 +69,60 @@
 		
 	</div><!--homepage-->
 	
-	<div id="productspage" style="display: block">
-		<div class="container">
-			<div class="row two-col">
-				<div class="span5">
-				</div>
-				<div class="span7">
-				</div>
+	<div id="productspage" style="display: none">
+		<div id="diamond" class="two-col">
+			<div class="container">	
+				<div class="row">			
+					<div class="span6">
+						<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-dconcretenail.png"></a>
+
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
+				
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
+				
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
+					</div>
+					<div class="span6">
+						<h2>Diamond Concrete Nail</h2>
+						<h4>Some detail about this topic. It should be around 3-4 lines. 
+							Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic.</h4>
+						<div class="font-small subweight">Product specification</div>
+						<div>This can be an important product specification. It cannot be one more 1 line.</div>
+						<div class="product-tel font-standard">
+							<img src="images/ic-tel.png">
+							(+66)2 351 3233
+						</div>						
+					</div>		
+				</div>	
 			</div>
-			<div class="row two-col-revese">
-				<div class="span7">
-				</div>
-				<div class="span5">
-				</div>
+		</div>
+		
+		<div id="eagle" class="two-col-revese">
+			<div class="container">	
+				<div class="row">			
+					<div class="span7">		
+						<h2>Eagle Concrete Nail</h2>
+						<h4>Some detail about this topic. It should be around 3-4 lines. 
+							Some detail about this topic. It should be around 3-4 lines.
+							Some detail about this topic.</h4>
+						<div class="font-small subweight">Product specification</div>
+						<div>This can be an important product specification. It cannot be one more 1 line.</div>
+						<div class="product-tel font-standard">
+							<img src="images/ic-tel.png">
+							(+66)2 351 3233
+						</div>				
+					</div>
+					<div class="span5">
+						<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
+
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
+				
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
+				
+						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
+					</div>		
+				</div>	
 			</div>
 		</div>
 	</div><!--productspage-->

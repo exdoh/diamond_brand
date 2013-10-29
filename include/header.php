@@ -12,6 +12,11 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
 	
+	<!-- Add fancyBox main CSS files -->
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	
 	<!-- SASS style CSS -->
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -47,8 +52,9 @@
 									Products
 									<b class="caret"></b>
 								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Diamond Concrete Nail</a></li>
+								<ul id="menu-list" class="dropdown-menu">
+									<li id="menu-diamond"><a href="#">Diamond Concrete Nail</a></li>
+									<li id="menu-eagle"><a href="#">Eagle Concrete Nail</a></li>
 								</ul>
 							</li>
 							<li id="aboutcontact">
@@ -57,7 +63,7 @@
 						</ul>
 					
 					
-						<div class="btn-group pull-right">
+						<div id="lang-menu" class="btn-group pull-right">
 						   <button class="btn dropdown-toggle" data-toggle="dropdown">
 						     	<img src="images/ic-lang-en.png">
 						     	<span class="caret"></span>
