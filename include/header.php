@@ -1,3 +1,4 @@
+<?php require_once "controllers/config.php";?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,7 +71,7 @@
 						   </button>
 						   <ul class="dropdown-menu">
 							    <li id="english"><a href="#">English</a></li>
-								<li id="thailand"><a href="#">Thailand</a></li>
+								<li id="thailand"><a href="#">Thai</a></li>
 						   </ul>
 						</div>
 					</div><!--container-->

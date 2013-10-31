@@ -1,5 +1,5 @@
     <div class="footer font-footer">
-    	<div class="container">
+    	<div id="text-footer" class="container">
     		&copy Charoensarp 2013
     	</div>
     </div>
@@ -18,7 +18,13 @@
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    
     <!-- Include Ajax and Javascript Diamond Brand -->
+    <script type="text/javascript">
+		 	var service_path = '<?php echo $url_path;?>' + 'charoensarp.com/test/controllers';
+		 	//var service_path = '/vote_policy/controllers';
+	</script>
+    
     <script src="js/common.js"></script>
 	<script src="js/diamond_brand.js"></script>
 	<script type="text/javascript">

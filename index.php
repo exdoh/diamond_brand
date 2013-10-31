@@ -7,10 +7,10 @@
 					<div class="span5">
 						<img src="images/ph-bigbanner-product.png">
 					</div>
-					<div class="span7">
+					<div id="recommend" class="span7">
 						<h1>The best concrete nail</h1>
 						
-						<p>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.</p>
+						<p class="font-h3">Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.</p>
 						
 						<div class="row">
 							<div class="span2">
@@ -27,7 +27,7 @@
 		<div id="quality_products">
 			<div class="container">
 				<div id="home_mid" class="row">
-					<h2>Our quality products</h2>
+					<h2 id="our-quality">Our quality products</h2>
 					
 					<div class="span4">
 						<div class="border-img">
@@ -59,9 +59,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="span8 offset2">
-						<h1>For more infomation</h1>
+						<h1 id="for-more">For more infomation</h1>
 						<div id="tel" class="font-h3">Tel: (+66)2 455 9204</div>
-						<a href="mailto:cher4ry@gmail.com" target="_top"><div id="email" class="font-h3">Email: cher4ry@gmail.com</div></a>
+						<a href="mailto:csdiamondbrand@gmail.com" target="_top"><div id="email" class="font-h3">Email: csdiamondbrand@gmail.com</div></a>
 					</div>
 				</div>
 			</div>
@@ -74,13 +74,7 @@
 			<div class="container">	
 				<div class="row">			
 					<div class="span6">
-						<a class="fancybox-thumbs" data-fancybox-group="thumb" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-dconcretenail.png"></a>
-
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
-				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
-				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
+						<img src="images/ph-products-dconcretenail.png">
 					</div>
 					<div class="span6">
 						<h2>Diamond Concrete Nail</h2>
@@ -98,10 +92,10 @@
 			</div>
 		</div>
 		
-		<div id="eagle" class="two-col-revese">
+		<div id="eagle" class="two-col">
 			<div class="container">	
 				<div class="row">			
-					<div class="span7">		
+					<div class="span6">		
 						<h2>Eagle Concrete Nail</h2>
 						<h4>Some detail about this topic. It should be around 3-4 lines. 
 							Some detail about this topic. It should be around 3-4 lines.
@@ -113,14 +107,8 @@
 							(+66)2 351 3233
 						</div>				
 					</div>
-					<div class="span5">
-						<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="images/ph-products-dconcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
-
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-econcretenail.png"><img src="images/ph-products-econcretenail.png"></a>
-				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-woodennail.png"><img src="images/ph-products-woodennail.png"></a>
-				
-						<a class="fancybox-thumbs" style="display:none" data-fancybox-group="thumb1" href="images/ph-products-blackwire.png"><img src="images/ph-products-blackwire.png"></a>
+					<div class="span6">
+						<img class="pull-right" src="images/ph-products-econcretenail.png">
 					</div>		
 				</div>	
 			</div>
@@ -131,10 +119,10 @@
 		<div id="contact">
 			<div class="container">
 				<div class="row">
-					<div class="span6">
-						<img src="images/ph-about.png">
+					<div class="span5">
+						<img class="img-products" src="images/ph-about.png">
 					</div>
-					<div class="span6">
+					<div class="span7">
 						<div class="row">
 							<h2>Charoensarp Iron Wire Factory</h2>	
 							<h4>Some detail about this topic. It should be around 3-4 lines. 
@@ -145,7 +133,7 @@
 						
 						<div id="mapcontact" class="row">
 							<div class="span2">
-								<img src="images/ph-map.png">
+								<a href=""><img src="images/ph-map.png"></a>
 							</div>
 							<div class="span4">
 								<div id="headerinfo" class="font-small subweight">Contact Information</div>
@@ -155,7 +143,7 @@
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_email" class="subweight">Email: </span>
-									<span>charoensarp@domain.com</span>
+									<span>csdiamondbrand@gmail.com</span>
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_address" class="subweight">Address: </span>
