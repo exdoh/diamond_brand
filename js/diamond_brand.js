@@ -17,7 +17,7 @@ function diamond_brand(){
 	this.l_en_about = ['Contact Information','Tel: ','Email: ','Address: ','Bangpoo Industrial, 657 Moo2, Soi 1 Sukhumvit Rd, Bangpoomai, Muang, Samutprakarn Thailand 10280'];
 	this.l_th_about = ['ข้อมูลการติดต่อ','เบอร์โทร: ','อีเมล์: ','ที่อยู่: ','นิคมอุตรสาหกรรมบางปู 657 หมู 2 ซอย 1 ถนนสุขุมวิท ตำบลบางปูใหม่ อำเภอเมือง จังหวัดสมุทรปราการ ประเทศไทย 10280'];
 	
-	
+	this.languaue = 'en';
 }
 
 diamond_brand.prototype.reset = function()
@@ -58,14 +58,83 @@ diamond_brand.prototype.render_products = function(){
     };
     
 	ajax(service_path+'/products.php', param, 'text', '', function(data){
-		alert(data);
-		//pro.products = data;
+		var product = JSON.parse(data).products;
+		
+		var content = '';
+		
+		for(var i = 0 ; i < product.length ; i++)
+		{
+		    if(i%2 == 0)
+		    {
+    		    content += '<div class="two-col">';
+                    content += '<div class="container">'; 
+                        content += '<div class="row">';           
+                            content += '<div class="span6">';
+                                content += '<img src="images/' + product[i].image + '">';
+                            content += '</div>';
+                            content += '<div class="span6">';
+                            
+                            if(diamond_brand.languaue == 'en')
+                            {    
+                                content += '<h2>' + product[i].name_en + '</h2>';
+                                content += '<h4>' + product[i].content_en + '</h4>';
+                                content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
+                                content += '<div>' + product[i].speci_en + '</div>';
+                            } else {
+                                content += '<h2>' + product[i].name_th + '</h2>';
+                                content += '<h4>' + product[i].content_th + '</h4>';
+                                content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
+                                content += '<div>' + product[i].speci_th + '</div>';
+                            }  
+                                content += '<div class="product-tel font-standard">';
+                                    content += '<img src="images/ic-tel.png">';
+                                    content += '(+66)2 351 3233';
+                                content += '</div>';                      
+                            content += '</div>';      
+                        content += '</div>';  
+                    content += '</div>';
+                content += '</div>';		
+            } else {
+                content += '<div class="two-col">';
+                    content += '<div class="container">'; 
+                        content += '<div class="row">';           
+                            content += '<div class="span6">';
+                            
+                            if(diamond_brand.languaue == 'en')
+                            {    
+                                content += '<h2>' + product[i].name_en + '</h2>';
+                                content += '<h4>' + product[i].content_en + '</h4>';
+                                content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
+                                content += '<div>' + product[i].speci_en + '</div>';
+                            } else {
+                                content += '<h2>' + product[i].name_th + '</h2>';
+                                content += '<h4>' + product[i].content_th + '</h4>';
+                                content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
+                                content += '<div>' + product[i].speci_th + '</div>';
+                            }  
+                                content += '<div class="product-tel font-standard">';
+                                    content += '<img src="images/ic-tel.png">';
+                                    content += '(+66)2 351 3233';
+                                content += '</div>';                      
+                            content += '</div>';      
+                            content += '<div class="span6">';
+                                content += '<img src="images/' + product[i].image + '">';
+                            content += '</div>';
+                        content += '</div>';  
+                    content += '</div>';
+                content += '</div>';       
+            }    
+		}
+		
+		$('#productspage').html(content);
  	});
 }
 
 diamond_brand.prototype.change_language = function(lang)
 {
-	if(lang == 'en')
+	this.languaue = lang;
+	
+	if(this.languaue == 'en')
 	{
 		$('body').attr('class','en');
 		

@@ -48,6 +48,7 @@ Class Products{
 			 $db = new dbi();
 			 
 			 $arr = array();
+			 $i = 0;
 			 	
 	 		 $db->clear();
 			 $db->addfield("*");
@@ -57,17 +58,19 @@ Class Products{
 			 
 			 //echo $db->query2();exit();
 			 if ($db->query()) {
-	             if ($row = $db->getrow()) {
-	             	 $arr[0] = array(
+	             while ($row = $db->getrow()) {
+	             	 $arr[$i] = array(
 					     'id'=> $row["id"],
 					     'name_en'=> $row["name_en"],
 					     'name_th'=> $row["name_th"],
 					     'content_en'=> $row["content_en"],
 					     'content_th'=> $row["content_th"],
-					     'speci_en'=> $row["name_en"],
-					     'speci_th'=> $row["name_th"],
+					     'speci_en'=> $row["speci_en"],
+					     'speci_th'=> $row["speci_th"],
 					     'image'=> $row["image"]
 					 );
+					 
+					 $i++;
 	             }
 			}
 			$db->close();
