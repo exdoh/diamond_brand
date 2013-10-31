@@ -21,7 +21,7 @@
     
     <!-- Include Ajax and Javascript Diamond Brand -->
     <script type="text/javascript">
-		 	var service_path = '<?php echo $url_path;?>' + 'charoensarp.com/test/controllers';
+		 	var service_path = '<?php echo $url_path;?>' + 'localhost/diamond_brand/controllers';
 		 	//var service_path = '/vote_policy/controllers';
 	</script>
     
