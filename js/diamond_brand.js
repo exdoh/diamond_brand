@@ -85,12 +85,13 @@ diamond_brand.prototype.render_products = function(){
                 menu += '<li class="font-footer" onclick="diamond_brand.click_active(\'banner\')"><a href="#">' + product[i].name_th + '</a></li>';
             }
             
-            //products    
+            //products
+            content += '<div id="' + product[i].id_name + '" class="two-col">';
+                    content += '<div class="container">'; 
+                        content += '<div class="row">';           
+                            
 		    if(i%2 == 0)
 		    {
-    		    content += '<div class="two-col">';
-                    content += '<div class="container">'; 
-                        content += '<div class="row">';           
                             content += '<div class="span6">';
                                 content += '<img src="images/' + product[i].image + '">';
                             content += '</div>';
@@ -113,13 +114,8 @@ diamond_brand.prototype.render_products = function(){
                                     content += '(+66)2 351 3233';
                                 content += '</div>';                      
                             content += '</div>';      
-                        content += '</div>';  
-                    content += '</div>';
-                content += '</div>';		
-            } else {
-                content += '<div class="two-col">';
-                    content += '<div class="container">'; 
-                        content += '<div class="row">';           
+                        
+            } else {    
                             content += '<div class="span6">';
                             
                             if(diamond_brand.languaue == 'en')
@@ -142,10 +138,10 @@ diamond_brand.prototype.render_products = function(){
                             content += '<div class="span6">';
                                 content += '<img src="images/' + product[i].image + '">';
                             content += '</div>';
-                        content += '</div>';  
-                    content += '</div>';
-                content += '</div>';       
-            }    
+            }
+                    content += '</div>';  
+                content += '</div>';
+            content += '</div>';            
 		}
 		
 		$('#menu-list').html(menu);
@@ -182,6 +178,7 @@ diamond_brand.prototype.change_language = function(lang)
 		$('#moredetail').html(this.l_en_home[0]);
 		
 		//home info
+		$('#our-quality').html(this.l_en_home[1]);
 		$('#for-more').html(this.l_en_home[2]);
 		$('#tel').html(this.l_en_home[3]);
 		$('#email').html(this.l_en_home[4]);
@@ -229,6 +226,7 @@ diamond_brand.prototype.change_language = function(lang)
 		$('#moredetail').html(this.l_th_home[0]);
 		
 		//home info
+		$('#our-quality').html(this.l_th_home[1]);
 		$('#for-more').html(this.l_th_home[2]);
 		$('#tel').html(this.l_th_home[3]);
 		$('#email').html(this.l_th_home[4]);
