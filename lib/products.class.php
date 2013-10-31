@@ -64,7 +64,7 @@ Class Products{
 					     'name_th'=> $row["name_th"],
 					     'content_en'=> $row["content_en"],
 					     'content_th'=> $row["content_th"],
-					     'speci_en'=> $row["name-en"],
+					     'speci_en'=> $row["name_en"],
 					     'speci_th'=> $row["name_th"],
 					     'image'=> $row["image"]
 					 );
