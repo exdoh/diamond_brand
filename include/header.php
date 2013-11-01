@@ -45,20 +45,21 @@
 				<div class="navbar-inner">
 					<div class="container">					
 						<ul class="nav">
-							<li id="home" class="active">
+							<li id="home" class="font-footer active">
 								<a href="#">Home</a>
 							</li>
-							<li id="products" class="dropdown">
+							<li id="products" class="font-footer dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 									Products
 									<b class="caret"></b>
 								</a>
 								<ul id="menu-list" class="dropdown-menu">
+									<!--Render-->
 									<li id="menu-diamond"><a href="#">Diamond Concrete Nail</a></li>
 									<li id="menu-eagle"><a href="#">Eagle Concrete Nail</a></li>
 								</ul>
 							</li>
-							<li id="aboutcontact">
+							<li id="aboutcontact" class="font-footer">
 								<a href="#">About & Contact</a>
 							</li>
 						</ul>

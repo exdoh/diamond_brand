@@ -70,6 +70,7 @@
 	</div><!--homepage-->
 	
 	<div id="productspage" style="display: none">
+		<!--Render-->
 		<div id="diamond" class="two-col">
 			<div class="container">	
 				<div class="row">			
@@ -124,8 +125,8 @@
 					</div>
 					<div class="span7">
 						<div class="row">
-							<h2>Charoensarp Iron Wire Factory</h2>	
-							<h4>Some detail about this topic. It should be around 3-4 lines. 
+							<h2 id="name_com">Charoensarp Iron Wire Factory</h2>	
+							<h4 id="data_com">Some detail about this topic. It should be around 3-4 lines. 
 								 Some detail about this topic. It should be around 3-4 lines.
 								 Some detail about this topic. It should be around 3-4 lines.</h4>
 						</div> 
@@ -164,9 +165,9 @@
 						<img src="images/logo-diamond.png" class="img-circle">
 					</div>
 					<div class="span9">
-						<h3>Diamond Brand</h3>
+						<h3 id="diamond-brand">Diamond Brand</h3>
 						
-						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+						<h4 id="diamond-data-brand">Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. </h4>
@@ -179,9 +180,9 @@
 						<img src="images/logo-eagle.png" class="img-circle">
 					</div>
 					<div class="span9">
-						<h3>Eagle Brand</h3>
+						<h3 id="eagle-brand">Eagle Brand</h3>
 						
-						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+						<h4 id="eagle-data-brand">Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines.</h4>
@@ -193,9 +194,9 @@
 						<img src="images/logo-lion.png" class="img-circle">
 					</div>
 					<div class="span9">
-						<h3>Lion Brand</h3>
+						<h3 id="lion-brand">Lion Brand</h3>
 						
-						<h4>Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
+						<h4 id="lion-data-brand">Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.
 							Some detail about this topic. It should be around 3-4 lines.</h4>

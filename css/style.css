@@ -76,6 +76,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 #carousel { padding: 60px 0; }
 #carousel input[type=button] { color: white; background-color: #555555; opacity: 0.3; }
 #carousel p { line-height: 30px; margin: 20px 0 30px; }
+#carousel .span2 { margin-left: 0px; }
 
 #quality_products { background-color: #dddddd; padding: 40px 0; }
 
