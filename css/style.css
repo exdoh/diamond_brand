@@ -28,7 +28,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .subweight { font-weight: bold; }
 
-#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100%; background-repeat: "no-repeat"; }
+#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% 100%; background-repeat: "no-repeat"; }
 
 #logo { padding: 16px 0 28px 0; }
 #logo img { float: left; margin-right: 10px; }
@@ -88,7 +88,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .border-img { border-radius: 500px; border: solid 7px #bbb; padding: 7px; margin-left: 12px; margin-right: 12px; }
 
-#moreinfo { background-image: url("../images/bg-moreinfo.png"); background-size: 100%; background-repeat: "no-repeat"; padding: 40px 0 50px; text-align: center; }
+#moreinfo { background-image: url("../images/bg-moreinfo.png"); background-size: 100% auto; background-repeat: "no-repeat"; padding: 40px 0 50px; text-align: center; }
 #moreinfo h1 { margin-bottom: 24px; }
 #moreinfo a { text-decoration: none; }
 

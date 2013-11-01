@@ -110,7 +110,7 @@ body.th {
 }
 
 #banner {
-    @include background('../images/bg-bigbanner.png',100%,'no-repeat');
+    @include background('../images/bg-bigbanner.png',100%,100%,'no-repeat');
 }
 
 #logo {
@@ -259,7 +259,7 @@ body.th {
 }
 
 #moreinfo {
-    @include background('../images/bg-moreinfo.png',100%,'no-repeat');
+    @include background('../images/bg-moreinfo.png',100%,auto,'no-repeat');
     padding: 40px 0 50px;
     text-align: center;
     h1 {
