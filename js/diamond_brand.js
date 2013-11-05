@@ -36,6 +36,7 @@ function diamond_brand(){
 
 diamond_brand.prototype.reset = function()
 {
+	diamond_brand.render_categorys();
 	diamond_brand.render_products();
 	diamond_brand.change_language('en');
 	
@@ -54,14 +55,41 @@ diamond_brand.prototype.reset = function()
 }
 
 //////Render///////
-diamond_brand.prototype.render_category_home = function(){
+diamond_brand.prototype.render_categorys = function(){
 	var param = {
-        mode: 'get_num_data',
-        approve_status: this.approve_status
+        mode: 'get_categorys'
     };
     
-	ajax(service_path+'/diamond_brand.php', param, 'text', '', function(data){
-		diamond_brand.num_data_all = data;
+	ajax(service_path+'/products.php', param, 'text', '', function(data){
+		var cat = JSON.parse(data).categorys;
+		
+		if(diamond_brand.languaue == 'en')
+		{	
+			var content = '<h2 id="our-quality">' + diamond_brand.l_en_home[1] + '</h2>';
+		} else {
+			var content = '<h2 id="our-quality">' + diamond_brand.l_th_home[1] + '</h2>';
+		}
+		
+		for(var i = 0 ; i < cat.length ; i++)
+		{
+			content += '<div class="span4">';
+				content += '<div class="border-img">';
+					content += '<img src="images/' + cat[i].image + '" class="img-circle">';
+				content += '</div>';
+				
+			if(diamond_brand.languaue == 'en')
+			{	
+				content += '<div><h3>' + cat[i].name_en + '</h3></div>';
+				content += '<p class="font-standard">' + cat[i].content_en + '</p>';
+			} else {
+				content += '<div><h3>' + cat[i].name_th + '</h3></div>';
+				content += '<p class="font-standard">' + cat[i].content_th + '</p>';
+			}
+			
+			content += '</div>';
+		}
+		
+		$('#home_mid').html(content);
  	});
 }
 diamond_brand.prototype.render_products = function(){
@@ -250,6 +278,7 @@ diamond_brand.prototype.change_language = function(lang)
         $('#lion-data-brand').html(this.l_th_branddata[2]);
 	}
 	
+	diamond_brand.render_categorys();
 	diamond_brand.render_products();
 }
 
