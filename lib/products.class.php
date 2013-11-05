@@ -78,8 +78,7 @@ Class Products{
 					     'content_en'=> $row["content_en"],
 					     'content_th'=> $row["content_th"],
 					     'speci_en'=> $row["speci_en"],
-					     'speci_th'=> $row["speci_th"],
-					     'image'=> $row["image"]
+					     'speci_th'=> $row["speci_th"]
 					 );
 					 
 					 $i++;

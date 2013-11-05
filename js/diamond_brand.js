@@ -38,8 +38,6 @@ function diamond_brand(){
 
 diamond_brand.prototype.reset = function()
 {
-	diamond_brand.render_categorys();
-	diamond_brand.render_products();
 	diamond_brand.change_language('en');
 	
 	$('#home').attr('onclick','diamond_brand.click_active("home")');
@@ -75,7 +73,7 @@ diamond_brand.prototype.render_categorys = function(){
 		for(var i = 0 ; i < cat.length ; i++)
 		{
 			content += '<div class="span4">';
-				content += '<div class="border-img" onclick="diamond_brand.click_active(\'' + diamond_brand.div_name_slideto[i] + '\')">';
+				content += '<div class="border-img" onclick="diamond_brand.click_active(\'' + diamond_brand.div_name_slideto_cat[i] + '\')">';
 					content += '<img src="images/' + cat[i].image + '" class="img-circle">';
 				content += '</div>';
 				
@@ -123,7 +121,7 @@ diamond_brand.prototype.render_products = function(){
 		    if(i%2 == 0)
 		    {
                             content += '<div class="span6">';
-                                content += '<img src="images/' + product[i].image + '">';
+                                content += '<img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png">';
                             content += '</div>';
                             content += '<div class="span6">';
                             
@@ -166,7 +164,7 @@ diamond_brand.prototype.render_products = function(){
                                 content += '</div>';                      
                             content += '</div>';      
                             content += '<div class="span6">';
-                                content += '<img src="images/' + product[i].image + '">';
+                                content += '<img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png">';
                             content += '</div>';
             }
                     content += '</div>';  
@@ -330,166 +328,13 @@ diamond_brand.prototype.click_active = function(name){
 		$('#aboutcontact').attr('class','font-footer');
 		
 		$('html,body').animate({
-        	scrollTop: $("#"+name).offset().top-40},
+        	scrollTop: $("#"+name).offset().top-80},
         2000);
 	}
 	
 }
 
-diamond_brand.prototype.render_table_diamond_brand_help = function(){
-	var param = {
-        mode: 'get',
-        approve_status: this.approve_status,
-        start : this.start
-    };
-    
-	ajax(service_path+'/diamond_brand.php', param, 'text', '', function(data){
-		var data_approve = JSON.parse(data).approve;
-        
-        var content = '<tr>';
-        		
-        		if(diamond_brand.approve_status == 0 || diamond_brand.approve_status == 1)
-        		{
-        			content += '<td align=center width="8%">approve</td>';
-        		} else {
-        			content += '<td align=center width="8%">back approve</td>';
-        		}
-        		
-        		content += '<td align=center width="15%">Name</td>';
-        		content += '<td align=center width="30%">Message</td>';
-        		content += '<td align=center width="15%">Email</td>';
-        		content += '<td align=center width="10%">Phone Number</td>';
-        		
-        		if(diamond_brand.approve_status == 0 || diamond_brand.approve_status == 2)
-        		{
-        			content += '<td align=center width="10%">create date</td>';
-        		} else {
-        			content += '<td align=center width="10%">approve date</td>';
-        		}
-        		
-        	content += '</tr>';
-    	
-    	for(var i = 0 ; i<data_approve.length ; i++)
-    	{
-    		content += '<tr>';
-    			
-    			if(diamond_brand.approve_status == 0)
-        		{
-        			content += '<td align=center width="8%">';
-        				content += '<input type="button" id="approve" value="Approve" onclick="diamond_brand.click_approve(' + data_approve[i].fhdiamond_brand_id + ');">';
-        				content += '<input type="button" id="cancel" value="Cancel" onclick="diamond_brand.cancel_approve(' + data_approve[i].fhdiamond_brand_id + ');">';
-        			content += '</td>';
-        		} else if(diamond_brand.approve_status == 1) {
-        			content += '<td align=center width="8%"><img src="image/approved.jpg" width="100"></td>';
-        		} else {
-        			content += '<td align=center width="8%"><input type="button" id="back" value="Back" onclick="diamond_brand.back_approve(' + data_approve[i].fhdiamond_brand_id + ');"></td>';
-        		}
-        		
-        		content += '<td align=center width="15%">' + data_approve[i].name + '</td>';
-        		content += '<td align=left width="30%">' + data_approve[i].message + '</td>';
-        		content += '<td align=center width="15%">' + data_approve[i].email + '</td>';
-        		content += '<td align=center width="10%">' + data_approve[i].phonenumber + '</td>';
-        		
-        		if(diamond_brand.approve_status == 0 || diamond_brand.approve_status == 2)
-        		{
-        			content += '<td align=center width="10%">' + data_approve[i].createdate + '</td>';
-        		} else {
-        			content += '<td align=center width="10%">' + data_approve[i].approvedate + '</td>';
-        		}
-        		
-        	content += '</tr>';
-    	}
-    	
-    $('#table_diamond_brand').html(content);
-    
-	});
-}
 //////Render///////
 
 //////Action///////
-diamond_brand.prototype.click_page_approve = function(){
-	this.approve_status = 0;
-	
-	$('#page_approve').attr('class','button_page_active');
-	$('#page_approved').attr('class','button_page_actived');
-	$('#page_cancel').attr('class','button_page_actived');
-	
-	this.getNumdata();
-	
-	this.render_table_diamond_brand_help();	
-}
-
-diamond_brand.prototype.click_page_approved = function(){
-	this.approve_status = 1;
-	
-	$('#page_approve').attr('class','button_page_actived');
-	$('#page_approved').attr('class','button_page_active');
-	$('#page_cancel').attr('class','button_page_actived');
-	
-	this.getNumdata();
-	
-	this.render_table_diamond_brand_help();	
-}
-
-diamond_brand.prototype.click_page_cancel = function(){
-	this.approve_status = 2;
-	
-	$('#page_approve').attr('class','button_page_actived');
-	$('#page_approved').attr('class','button_page_actived');
-	$('#page_cancel').attr('class','button_page_active');
-	
-	this.getNumdata();
-	
-	this.render_table_diamond_brand_help();	
-}
-
-diamond_brand.prototype.click_approve = function(id){
-	var yes = confirm("Approve Blood Help!");
-
-    if (yes)
-    {  
-		var param = {
-	        mode: 'approve',
-	        fhdiamond_brand_id: id
-	    };
-	    
-	    ajax(service_path+'/diamond_brand.php', param, 'text', '', function(data){
-	    	diamond_brand.render_table_diamond_brand_help();	
-	    });
-	}
-}
-
-diamond_brand.prototype.cancel_approve = function(id){
-	var yes = confirm("Cancel Approve Blood Help!");
-
-    if (yes)
-    {  
-		var param = {
-	        mode: 'change',
-	        fhdiamond_brand_id: id,
-	        approve_status: 2
-	    };
-	    
-	    ajax(service_path+'/diamond_brand.php', param, 'text', '', function(data){
-	    	diamond_brand.render_table_diamond_brand_help();	
-	    });
-	}
-}
-
-diamond_brand.prototype.back_approve = function(id){
-	var yes = confirm("Back to Approve Blood Help!");
-
-    if (yes)
-    {  
-		var param = {
-	        mode: 'change',
-	        fhdiamond_brand_id: id,
-	        approve_status: 0
-	    };
-	    
-	    ajax(service_path+'/diamond_brand.php', param, 'text', '', function(data){
-	    	diamond_brand.render_table_diamond_brand_help();	
-	    });
-	}
-}
 //////Action///////
