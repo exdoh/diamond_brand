@@ -87,7 +87,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 #home_mid h2 { margin-bottom: 40px; }
 #home_mid .span4 h3 { margin-top: 20px; margin-bottom: 5px; }
 
-.border-img { border-radius: 500px; border: solid 7px #bbb; padding: 7px; margin-left: 12px; margin-right: 12px; }
+.border-img { border-radius: 500px; border: solid 7px #bbb; padding: 7px; margin-left: 12px; margin-right: 12px; cursor: pointer; }
 
 #moreinfo { background-image: url("../images/bg-moreinfo.png"); background-size: 100% auto; background-repeat: "no-repeat"; padding: 40px 0 50px; text-align: center; }
 #moreinfo h1 { margin-bottom: 24px; }

@@ -31,6 +31,8 @@ function diamond_brand(){
                            'สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์.',
                            'สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์.'];
     
+	this.div_name_slideto = ['diamond-nail','eagle-nail','lion-nail','black-wire','steel-wire','wire-mesh','wire-working'];
+	this.div_name_slideto_cat = ['banner','lion-nail','black-wire'];
 	this.languaue = 'en';
 }
 
@@ -73,7 +75,7 @@ diamond_brand.prototype.render_categorys = function(){
 		for(var i = 0 ; i < cat.length ; i++)
 		{
 			content += '<div class="span4">';
-				content += '<div class="border-img">';
+				content += '<div class="border-img" onclick="diamond_brand.click_active(\'' + diamond_brand.div_name_slideto[i] + '\')">';
 					content += '<img src="images/' + cat[i].image + '" class="img-circle">';
 				content += '</div>';
 				
@@ -108,13 +110,13 @@ diamond_brand.prototype.render_products = function(){
 		    //menu
 		    if(diamond_brand.languaue == 'en')
             {
-                menu += '<li class="font-footer" onclick="diamond_brand.click_active(\'banner\')"><a href="#">' + product[i].name_en + '</a></li>';
+                menu += '<li class="font-footer" onclick="diamond_brand.click_active(\'' + diamond_brand.div_name_slideto[i] + '\')"><a href="#">' + product[i].name_en + '</a></li>';
             } else {
-                menu += '<li class="font-footer" onclick="diamond_brand.click_active(\'banner\')"><a href="#">' + product[i].name_th + '</a></li>';
+                menu += '<li class="font-footer" onclick="diamond_brand.click_active(\'' + diamond_brand.div_name_slideto[i] + '\')"><a href="#">' + product[i].name_th + '</a></li>';
             }
             
             //products
-            content += '<div id="' + product[i].id_name + '" class="two-col">';
+            content += '<div id="' + diamond_brand.div_name_slideto[i] + '" class="two-col">';
                     content += '<div class="container">'; 
                         content += '<div class="row">';           
                             
@@ -328,7 +330,7 @@ diamond_brand.prototype.click_active = function(name){
 		$('#aboutcontact').attr('class','font-footer');
 		
 		$('html,body').animate({
-        	scrollTop: $("#"+name).offset().top},
+        	scrollTop: $("#"+name).offset().top-40},
         2000);
 	}
 	

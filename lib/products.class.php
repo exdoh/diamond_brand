@@ -73,7 +73,6 @@ Class Products{
 	             while ($row = $db->getrow()) {
 	             	 $arr[$i] = array(
 					     'id'=> $row["id"],
-					     'id_name'=> $row["id_name"],
 					     'name_en'=> $row["name_en"],
 					     'name_th'=> $row["name_th"],
 					     'content_en'=> $row["content_en"],

@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 3.5.8.2
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 31, 2013 at 09:02 PM
--- Server version: 5.6.11
--- PHP Version: 5.5.3
+-- Host: localhost
+-- Generation Time: Nov 05, 2013 at 07:09 PM
+-- Server version: 5.5.31
+-- PHP Version: 5.3.27
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,10 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `diamond_brand`
+-- Database: `charoen1_diamond`
 --
-CREATE DATABASE IF NOT EXISTS `diamond_brand` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `diamond_brand`;
 
 -- --------------------------------------------------------
 
@@ -35,10 +33,20 @@ CREATE TABLE IF NOT EXISTS `categorys` (
   `name_th` varchar(50) NOT NULL,
   `content_en` text NOT NULL,
   `content_th` text NOT NULL,
+  `image` varchar(50) NOT NULL DEFAULT '',
   `create_at` datetime NOT NULL,
   `update_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `categorys`
+--
+
+INSERT INTO `categorys` (`id`, `name_en`, `name_th`, `content_en`, `content_th`, `image`, `create_at`, `update_at`) VALUES
+(1, 'Concrete Nails', 'ตะปูคอนกรีต', 'A short description about concrete nails. This can be around three to four lines of text.', 'อะ ช๊อต เดรตคลิปชั่น อะเบ๊า คอนครีต เนล. ดีต แคน บี อะราวด ทรี ทู โฟว ไลน์ อ๊อฟ เทก.', 'ph-home-product-left.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, 'Wooden Nails', 'ตะปูไม้', 'A short description about concrete nails. This can be around three to four lines of text.', 'อะ ช๊อต เดรตคลิปชั่น อะเบ๊า คอนครีต เนล. ดีต แคน บี อะราวด ทรี ทู โฟว ไลน์ อ๊อฟ เทก.', 'ph-home-product-mid.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 'Black Annealed Wire', 'ลวดอบอ่อนสีดำ', 'A short description about concrete nails. This can be around three to four lines of text.', 'อะ ช๊อต เดรตคลิปชั่น อะเบ๊า คอนครีต เนล. ดีต แคน บี อะราวด ทรี ทู โฟว ไลน์ อ๊อฟ เทก.', 'ph-home-product-right.png', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
