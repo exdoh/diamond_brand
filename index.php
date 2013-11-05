@@ -49,8 +49,7 @@
 						</div>
 						<div><h3>Concrete Nails</h3></div>
 						<p class="font-standard">content</p>
-					</div>
-					
+					</div>					
 				</div>
 			</div>
 		</div><!--quality_products-->
