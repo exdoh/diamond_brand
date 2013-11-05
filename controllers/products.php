@@ -15,8 +15,8 @@ $p = new products();
 $mode = $_POST["mode"];
 
 switch($mode){
-	case "get_category" : {
-		$p->getDataProducts();
+	case "get_categorys" : {
+		$p->getDataCategorys();
 	}
 	break;
 	case "get_products" : {

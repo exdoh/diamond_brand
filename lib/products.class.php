@@ -10,13 +10,13 @@
 
 Class Products{
      
-	/**	 
+	 /**	 
 	 * แสดงข้อมูล products
 	 * @param -
 	 * @return -
 	 * @access public
 	 */	
-	 function getDataCategory(){
+	 function getDataCategorys(){
 	 		 require_once "dbi.class.php";
 			 $db = new dbi();
 			 
@@ -34,22 +34,19 @@ Class Products{
 	             while ($row = $db->getrow()) {
 	             	 $arr[$i] = array(
 					     'id'=> $row["id"],
-					     'id_name'=> $row["id_name"],
 					     'name_en'=> $row["name_en"],
 					     'name_th'=> $row["name_th"],
 					     'content_en'=> $row["content_en"],
 					     'content_th'=> $row["content_th"],
-					     'speci_en'=> $row["speci_en"],
-					     'speci_th'=> $row["speci_th"],
-					     'image'=> $row["image"]
+					     'image'=>$row["image"]
 					 );
 					 
 					 $i++;
 	             }
 			}
 			$db->close();
-			
-			echo '{"products":'.json_encode($arr).'}';	
+
+			echo '{"categorys":'.json_encode($arr).'}';	
 	 }
 	 
 	 /**	 
@@ -76,7 +73,6 @@ Class Products{
 	             while ($row = $db->getrow()) {
 	             	 $arr[$i] = array(
 					     'id'=> $row["id"],
-					     'id_name'=> $row["id_name"],
 					     'name_en'=> $row["name_en"],
 					     'name_th'=> $row["name_th"],
 					     'content_en'=> $row["content_en"],
