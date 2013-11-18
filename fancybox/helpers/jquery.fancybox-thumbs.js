@@ -137,6 +137,7 @@
 
 			//Set active element
 			this.list.children().removeClass('active').eq(obj.index).addClass('active');
+			if (this.wrap) {this.wrap.appendTo('.fancybox-wrap');}
 		},
 
 		//Center list
