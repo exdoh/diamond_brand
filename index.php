@@ -135,7 +135,7 @@
 						
 						<div id="mapcontact" class="row">
 							<div class="span2">
-								<a href=""><img src="images/ph-map.png"></a>
+								<a href="https://maps.google.com/maps?z=12&t=m&q=loc:13.519298+100.669236" target="_blank"><img src="images/ph-map.png"></a>
 							</div>
 							<div class="span4">
 								<div id="headerinfo" class="font-small subweight">Contact Information</div>
@@ -159,7 +159,7 @@
 			</div>
 		</div><!--contact-->
 		
-		<div id="about">
+		<div id="about" style="display: none">
 			<div class="container">
 				<div id="diamond" class="row">
 					<div class="span3">					
