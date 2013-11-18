@@ -1,6 +1,6 @@
 function diamond_brand(){
-	this.l_en_headfoot = ['Diamond Brand','By Charoensarp','The best concrete nail','Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.','&copy Charoensarp 2013'];
-	this.l_th_headfoot = ['ไดมอนต์ แบรนต์','บาย เจริญศรัพย์','ตะปูคอนกรีตคุณภาพเยี่ยม','สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์.','&copy เจริญทรัพย์ 2556'];
+	this.l_en_headfoot = ['Diamond Brand','By Charoensarp','The best concrete nail','Customer satisfaction is our guarantee of being the leader in the manufacturing and distribution of concrete nails for more than 25 years Not only domestic market, our products come across to customers in regional country.','&copy Charoensarp 2013'];
+	this.l_th_headfoot = ['Diamond Brand','By Charoensarp','สุดยอดตะปูคอนกรีต','เราคือผู้นำด้านการผลิตและจำหน่ายตะปูคอนกรีตมากว่า 25 ปี คุณภาพและบริการได้รับการยอมรับจากตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้','&copy Charoensarp 2013'];
 	
 	this.l_nav_en = ['Home','Products','About & Contact'];
 	this.l_nav_th = ['หน้าแรก','สินค้า','เกี่ยวกับเรา'];
@@ -8,18 +8,18 @@ function diamond_brand(){
 	this.l_en = ['ic-lang-en.png','English','Thai'];
 	this.l_th = ['ic-lang-th.png','อังกฤษ','ไทย'];
 	
-	this.l_en_home = ['more detail','Our quality products','For more infomation','Tel: (+66)2 455 9204','Email: csdiamondbrand@gmail.com'];
-	this.l_th_home = ['ข้อมูลอื่น','อาวเออร์ คอลิตี้ โพรดัก','ฟอ มอ อินฟอเมชั่น','เบอร์โทร: (+66)2 455 9204','อีเมล์: csdiamondbrand@gmail.com'];
+	this.l_en_home = ['more detail','Our quality products','For more infomation','Tel: (+66)2-323-3155-7','Fax: (+66)2-323-4074','Email: diamondnail.cs@gmail.com'];
+	this.l_th_home = ['รายละเอียดเพิ่มเติม','สินค้าคุณภาพของเรา','สอบถามข้อมูลเพิ่มเติมได้ที่','โทร: (+66)2-323-3155-7','โทรสาร: (+66)2-323-4074','อีเมล์: diamondnail.cs@gmail.com'];
 	
 	this.l_en_products = ['Product specification'];
 	this.l_th_products = ['โพรดัก สเปฟิเคชั่น'];
 	
-	this.l_en_about = ['Charoensarp Iron Wire Factory','Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.'];
-	this.l_th_about = ['เจริญทรัพย์ โรงงานลวดเหล็ก','สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์. สำ ดีเมล ดีส ท๊อปปิก. อิส ชูด บี อราว ๓-๔ ไลน์.'];
+	this.l_en_about = ['Charoensarp Iron Wire Factory','Charoensarp Iron Wire Factory Co., Ltd.is established in 1987. We have been manufacturing and providing concrete nails, common nails, black annealed wire, and steal wire for using in construction industry for more than 25 years. Our principle is to provide good quality products at reasonable price. Also we have been trying our best to provide all items, on-time delivery, and guaranteed service for clients need. With high-quality material from Tata Steel, our product have been distributed to both domestic market and Southeast asian countries.'];
+	this.l_th_about = ['เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่','บริษัท เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่ จำกัด เป็นบริษัทที่ประกอบธุรกิจหลักในอุตสาหกรรมการผลิตและจำหน่าย ตะปูคอนกรีต ตะปูตอกไม้ ลวดอบดำ และลวดเหล็ก เพื่อใช้ในอุตสาหกรรมก่อสร้างมานานกว่า 25 ปี (ก่อตั้งในปี 2530)เราใส่ใจในทุกขั้นตอนการผลิต และมุ่งมั่นผลิตสินค้าที่มีคุณภาพสู่ตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้ ด้วยวัตถุดิบคุณภาพจากทาทา สตีลและให้บริการโดยคำนึงถึงความพึงพอใจสูงสุดของลูกค้า.'];
 	
 	
-	this.l_en_about_info = ['Contact Information','Tel: ','Email: ','Address: ','Bangpoo Industrial, 657 Moo2, Soi 1 Sukhumvit Rd, Bangpoomai, Muang, Samutprakarn Thailand 10280'];
-	this.l_th_about_info = ['ข้อมูลการติดต่อ','เบอร์โทร: ','อีเมล์: ','ที่อยู่: ','นิคมอุตรสาหกรรมบางปู 657 หมู 2 ซอย 1 ถนนสุขุมวิท ตำบลบางปูใหม่ อำเภอเมือง จังหวัดสมุทรปราการ ประเทศไทย 10280'];
+	this.l_en_about_info = ['Contact Information','Tel: ','Email: ','Address: ','Bangpoo Industrial District, 657 Moo 2, Soi 1, Sukhumvit Rd., Bangpoomai, Muang, Samutprakarn, Thailand 10280'];
+	this.l_th_about_info = ['ติดต่อเราได้ที่','โทร: ','อีเมล์: ','ที่อยู่: ','นิคมอุตสาหกรรมบางปู, 657 หมู่ 2, ซอย 1, ถนนสุขุมวิท, ต.บางปูใหม่, อ.เมือง จ.สมุทรปราการ  10280'];
 	
 	this.l_en_brandname = ['Diamond Brand','Eagle Brand','Lion Brand'];
     this.l_th_brandname = ['ตราเพชร','ตราอินทรีย์','ตราสิงโต'];
@@ -121,7 +121,12 @@ diamond_brand.prototype.render_products = function(){
 		    if(i%2 == 0)
 		    {
                             content += '<div class="span6">';
-                                content += '<img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png">';
+                            	content += '<div id="xxx">';
+                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.png"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.png"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/4.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/4.png"></a>';
+                            	content += '</div>';
                             content += '</div>';
                             content += '<div class="span6">';
                             
@@ -129,17 +134,17 @@ diamond_brand.prototype.render_products = function(){
                             {    
                                 content += '<h2>' + product[i].name_en + '</h2>';
                                 content += '<h4>' + product[i].content_en + '</h4>';
-                                content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
-                                content += '<div>' + product[i].speci_en + '</div>';
+                                //content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
+                                //content += '<div>' + product[i].speci_en + '</div>';
                             } else {
                                 content += '<h2>' + product[i].name_th + '</h2>';
                                 content += '<h4>' + product[i].content_th + '</h4>';
-                                content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
-                                content += '<div>' + product[i].speci_th + '</div>';
+                                //content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
+                                //content += '<div>' + product[i].speci_th + '</div>';
                             }  
                                 content += '<div class="product-tel font-standard">';
                                     content += '<img src="images/ic-tel.png">';
-                                    content += '(+66)2 351 3233';
+                                    content += '(+66)2-323-3155-7';
                                 content += '</div>';                      
                             content += '</div>';      
                         
@@ -150,21 +155,24 @@ diamond_brand.prototype.render_products = function(){
                             {    
                                 content += '<h2>' + product[i].name_en + '</h2>';
                                 content += '<h4>' + product[i].content_en + '</h4>';
-                                content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
-                                content += '<div>' + product[i].speci_en + '</div>';
+                                //content += '<div class="font-small subweight">' + diamond_brand.l_en_products[0] + '</div>';
+                                //content += '<div>' + product[i].speci_en + '</div>';
                             } else {
                                 content += '<h2>' + product[i].name_th + '</h2>';
                                 content += '<h4>' + product[i].content_th + '</h4>';
-                                content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
-                                content += '<div>' + product[i].speci_th + '</div>';
+                                //content += '<div class="font-small subweight">' + diamond_brand.l_th_products[0] + '</div>';
+                                //content += '<div>' + product[i].speci_th + '</div>';
                             }  
                                 content += '<div class="product-tel font-standard">';
                                     content += '<img src="images/ic-tel.png">';
-                                    content += '(+66)2 351 3233';
+                                    content += '(+66)2-323-3155-7';
                                 content += '</div>';                      
                             content += '</div>';      
                             content += '<div class="span6">';
-                                content += '<img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png">';
+                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png"></a>';
+                            	content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.png"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.png"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/4.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/4.png"></a>';
                             content += '</div>';
             }
                     content += '</div>';  
@@ -209,7 +217,8 @@ diamond_brand.prototype.change_language = function(lang)
 		$('#our-quality').html(this.l_en_home[1]);
 		$('#for-more').html(this.l_en_home[2]);
 		$('#tel').html(this.l_en_home[3]);
-		$('#email').html(this.l_en_home[4]);
+		$('#fax').html(this.l_en_home[4]);
+		$('#email').html(this.l_en_home[5]);
 		
 		//about
 		$('#name_com').html(this.l_en_about[0]);
@@ -257,7 +266,8 @@ diamond_brand.prototype.change_language = function(lang)
 		$('#our-quality').html(this.l_th_home[1]);
 		$('#for-more').html(this.l_th_home[2]);
 		$('#tel').html(this.l_th_home[3]);
-		$('#email').html(this.l_th_home[4]);
+		$('#fax').html(this.l_th_home[4]);
+		$('#email').html(this.l_th_home[5]);
 		
 		//about
 		$('#name_com').html(this.l_th_about[0]);

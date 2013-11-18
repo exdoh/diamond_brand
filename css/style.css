@@ -93,7 +93,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 #moreinfo h1 { margin-bottom: 24px; }
 #moreinfo a { text-decoration: none; }
 
-#tel { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; margin-top: 8px; margin-bottom: 8px; }
+.tel { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; margin-top: 8px; margin-bottom: 8px; }
 
 #email { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; }
 
@@ -110,7 +110,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .two-col:nth-child(even) { background: #eeeeee; }
 
-.product-tel { background: #d0d0d0; margin-top: 14px; padding: 8px 22px; border-radius: 20px; width: 34%; }
+.product-tel { background: #d0d0d0; margin-top: 14px; padding: 8px 22px; border-radius: 20px; width: 37%; }
 
 #aboutpage { color: #333333; }
 #aboutpage h2, #aboutpage h3 { font-weight: bold; }

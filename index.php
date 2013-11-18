@@ -10,7 +10,7 @@
 					<div id="recommend" class="span7">
 						<h1>The best concrete nail</h1>
 						
-						<p class="font-h3">Some detail about this topic. It should be around 3-4 lines. Some detail about this topic. It should be around 3-4 lines.</p>
+						<p class="font-h3">Customer satisfaction is our guarantee of being the leader in the manufacturing and distribution of concrete nails for more than 25 years Not only domestic market, our products come across to customers in regional country.</p>
 						
 						<div class="row">
 							<div class="span2">
@@ -49,7 +49,8 @@
 						</div>
 						<div><h3>Concrete Nails</h3></div>
 						<p class="font-standard">content</p>
-					</div>					
+					</div>
+					
 				</div>
 			</div>
 		</div><!--quality_products-->
@@ -59,8 +60,9 @@
 				<div class="row">
 					<div class="span8 offset2">
 						<h1 id="for-more">For more infomation</h1>
-						<div id="tel" class="font-h3">Tel: (+66)2 455 9204</div>
-						<a href="mailto:csdiamondbrand@gmail.com" target="_top"><div id="email" class="font-h3">Email: csdiamondbrand@gmail.com</div></a>
+						<div id="tel" class="tel font-h3">Tel: (+66)2-323-3155-7</div>
+						<div id="fax" class="tel font-h3">Fax: (+66)2-323-4074</div>
+						<a href="mailto:diamondnail.cs@gmail.com" target="_top"><div id="email" class="font-h3">Email: diamondnail.cs@gmail.com</div></a>
 					</div>
 				</div>
 			</div>
@@ -139,11 +141,11 @@
 								<div id="headerinfo" class="font-small subweight">Contact Information</div>
 								<div class="datainfo font-footer">
 									<span id="info_tel" class="subweight">Tel: </span>
-									<span>(+66)2 460 2990</span>
+									<span>(+66)2-323-3155-7</span>
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_email" class="subweight">Email: </span>
-									<span>csdiamondbrand@gmail.com</span>
+									<span>diamondnail.cs@gmail.com</span>
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_address" class="subweight">Address: </span>

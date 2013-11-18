@@ -274,7 +274,7 @@ body.th {
     }
     
 }
-#tel {
+.tel {
     @include roundrect();
     margin-top: 8px;
     margin-bottom: 8px;
@@ -317,7 +317,7 @@ body.th {
     margin-top: 14px;
     padding: 8px 22px;  
     border-radius: 20px;
-    width: 34%;
+    width: 37%;
 }
 
 //aboutpage
