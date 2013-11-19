@@ -2,7 +2,9 @@
 
 @font-face { font-family: "Circular"; src: url(../fonts/Circular.ttf); }
 
-body.en { font-family: "Roboto Light"; color: white; }
+html { height: 100%; }
+
+body.en { font-family: "Roboto Light"; color: white; height: 100%; }
 body.en h1 { font-size: 34px; }
 body.en h2 { font-size: 28px; }
 body.en h3 { font-size: 24px; }
@@ -11,9 +13,9 @@ body.en h4 { font-size: 20px; }
 body.en .font-standard { font-size: 18px; }
 body.en .font-small { font-size: 16px; }
 body.en .font-footer { font-size: 14px; }
-body.en .footer { background-color: #ff921a; line-height: 50px; }
+body.en .footer { background-color: #ff921a; line-height: 80px; }
 
-body.th { font-family: "Circular"; color: white; }
+body.th { font-family: "Circular"; color: white; height: 100%; }
 body.th h1 { font-size: 42px; }
 body.th h2 { font-size: 34px; }
 body.th h3 { font-size: 30px; }
@@ -28,7 +30,11 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .subweight { font-weight: bold; }
 
-#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% 100%; background-repeat: "no-repeat"; }
+#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% auto; background-repeat: "no-repeat"; }
+
+#wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -50px; background: #dddddd; }
+
+#wrap > .container { padding-top: 60px; }
 
 #logo { padding: 16px 0 28px 0; }
 #logo img { float: left; margin-right: 10px; }
@@ -89,7 +95,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .border-img { border-radius: 500px; border: solid 7px #bbb; padding: 7px; margin-left: 12px; margin-right: 12px; cursor: pointer; }
 
-#moreinfo { background-image: url("../images/bg-moreinfo.png"); background-size: 100% auto; background-repeat: "no-repeat"; padding: 40px 0 50px; text-align: center; }
+#moreinfo { background-image: url("../images/bg-moreinfo.png"); background-size: 100% auto; background-repeat: "no-repeat"; padding: 40px 0 100px; text-align: center; }
 #moreinfo h1 { margin-bottom: 24px; }
 #moreinfo a { text-decoration: none; }
 
@@ -97,7 +103,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 #email { width: 100%; padding: 0.8em 0 1em; color: #fff; background: rgba(102, 102, 102, 0.6); border: 2px rgba(255, 255, 255, 0.1) solid; border-radius: 5px; }
 
-#productspage { color: #333333; }
+#productspage { color: #333333; margin-bottom: 50px; }
 #productspage .span6 { width: 450px; }
 #productspage h2 { font-weight: bold; margin-bottom: 16px; }
 #productspage h4 { line-height: 24px; margin-bottom: 16px; }
@@ -121,6 +127,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 #mapcontact .span2, #mapcontact .span4 { margin-left: 0px; }
 
-#about { background: #eeeeee; padding: 40px 0 14px; }
+#about { background: #eeeeee; padding: 40px 0 64px; }
+#about img { margin-left: 30px; }
 #about .img-circle { background: white; }
 #about .row { padding-bottom: 40px; }

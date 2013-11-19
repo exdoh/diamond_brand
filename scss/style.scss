@@ -32,9 +32,14 @@ $color-gray3: #333;
     src: url(../fonts/Circular.ttf);
 }
 
+html {
+  height: 100%;  
+}
+
 body.en {
     font-family: "Roboto Light";
     color: white;
+    height: 100%;
    
     h1 {
       font-size: $text-en-h1;
@@ -62,13 +67,14 @@ body.en {
     }
     .footer {
       background-color: $color-orange;
-      line-height: 50px;
+      line-height: 80px;
     }
 }
 
 body.th {
     font-family: "Circular";
     color: white;
+    height: 100%;
     h1 {
       font-size: $text-th-h1;
     }
@@ -110,7 +116,18 @@ body.th {
 }
 
 #banner {
-    @include background('../images/bg-bigbanner.png',100%,100%,'no-repeat');
+    @include background('../images/bg-bigbanner.png',100%,auto,'no-repeat');
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -50px;  
+  background: $color-grayd;
+}
+#wrap > .container {
+  padding-top: 60px;
 }
 
 #logo {
@@ -264,7 +281,7 @@ body.th {
 
 #moreinfo {
     @include background('../images/bg-moreinfo.png',100%,auto,'no-repeat');
-    padding: 40px 0 50px;
+    padding: 40px 0 100px;
     text-align: center;
     h1 {
       margin-bottom: 24px;
@@ -286,6 +303,7 @@ body.th {
 //productpage
 #productspage {
     color: $color-gray3;
+    margin-bottom: 50px;
     .span6 {
         width: 450px;
     }
@@ -350,8 +368,12 @@ body.th {
 //about
 #about {
     background: $color-graye;
-    padding: 40px 0 14px;
-   
+    padding: 40px 0 64px;
+    
+    img {
+      margin-left: 30px;  
+    }
+    
     .img-circle {
         background: white; 
     }
