@@ -31,6 +31,7 @@
 
   <body class="en">
 	<div id="banner">
+	<div id="wrap">
 		<header>
 			<div id="logo">
 				<div class="container">

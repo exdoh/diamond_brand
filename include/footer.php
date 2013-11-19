@@ -1,3 +1,4 @@
+    </div>
     <div class="footer font-footer">
     	<div id="text-footer" class="container">
     		&copy Charoensarp 2013
