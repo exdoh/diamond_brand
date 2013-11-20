@@ -30,7 +30,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .subweight { font-weight: bold; }
 
-#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% auto; background-repeat: "no-repeat"; }
+#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% 100%; background-repeat: "no-repeat"; }
 
 #wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -50px; background: #dddddd; }
 

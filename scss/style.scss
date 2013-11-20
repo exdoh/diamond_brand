@@ -116,7 +116,7 @@ body.th {
 }
 
 #banner {
-    @include background('../images/bg-bigbanner.png',100%,auto,'no-repeat');
+    @include background('../images/bg-bigbanner.png',100%,100%,'no-repeat');
 }
 
 #wrap {

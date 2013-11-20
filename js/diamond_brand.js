@@ -295,6 +295,8 @@ diamond_brand.prototype.change_language = function(lang)
 diamond_brand.prototype.click_active = function(name){
 	if(name == "home")
 	{
+		$('#banner').css('background-size','100% 100%');
+		
 		$('#homepage').show();
 		$('#carousel').show();
 		$('#productspage').hide();
@@ -318,6 +320,8 @@ diamond_brand.prototype.click_active = function(name){
 	}
 	else if (name == "aboutcontact") 
 	{
+		$('#banner').css('background-size','100% auto');
+		
 		$('#homepage').hide();
 		$('#carousel').hide();
 		$('#productspage').hide();
@@ -328,6 +332,8 @@ diamond_brand.prototype.click_active = function(name){
 		$('#aboutcontact').attr('class','font-footer active');
 	}
 	else {
+		$('#banner').css('background-size','100% auto');
+		
 		$('#homepage').hide();
 		$('#carousel').hide();
 		$('#productspage').show();
