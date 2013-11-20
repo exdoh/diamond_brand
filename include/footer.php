@@ -1,6 +1,4 @@
-   
-    	
-    </div>
+	</div>
     <div class="footer font-footer">
     	<div id="text-footer" class="container">
     		&copy Charoensarp 2013
@@ -24,8 +22,14 @@
     
     <!-- Include Ajax and Javascript Diamond Brand -->
     <script type="text/javascript">
-		 	var service_path = '<?php echo $url_path;?>' + 'localhost/diamond_brand/controllers';
-		 	//var service_path = '/vote_policy/controllers';
+		 	function getUrl (url) {
+			    var full_url = window.location.protocol + "//" + window.location.host + "/";
+			    if(window.location.hostname == 'localhost') {
+			         full_url += window.location.pathname.split("/")[1] + "/";
+			    }
+			    return full_url + url;
+			}
+		 	var service_path = getUrl('controllers');
 	</script>
     
     <script src="js/common.js"></script>
