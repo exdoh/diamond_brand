@@ -25,11 +25,20 @@ $color-gray3: #333;
 
 @font-face {
     font-family: "Roboto Light";
-    src: url(../fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.eot);
+    src: url(../fonts/Roboto-Light.eot) format('embedded-opentype'),
+         url(../fonts/Roboto-Light.woff) format('woff'),
+         url(../fonts/Roboto-Light.ttf) format('truetype'),
+         url(../font/roboto-light.svg#RobotoLight) format('svg');
 }
+
 @font-face {
     font-family: "Circular";
-    src: url(../fonts/Circular.ttf);
+    src: url(../fonts/Circular.eot);
+    src: url(../fonts/Circular.eot) format('embedded-opentype'),
+         url(../fonts/Circular.woff) format('woff'),
+         url(../fonts/Circular.ttf) format('truetype'),
+         url(../font/circular.svg#CircularRegular) format('svg');
 }
 
 html {
@@ -116,7 +125,7 @@ body.th {
 }
 
 #banner {
-    @include background('../images/bg-bigbanner.png',100%,auto,'no-repeat');
+    @include background('../images/bg-bigbanner.png',100%,100%,'no-repeat');
 }
 
 #wrap {
@@ -380,4 +389,9 @@ body.th {
     .row {
         padding-bottom: 40px;
     }
+}
+
+#text-footer {
+    font-family: "Roboto Light";
+    font-size: 14px;
 }

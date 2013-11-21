@@ -1,6 +1,6 @@
 function diamond_brand(){
 	this.l_en_headfoot = ['Diamond Brand','By Charoensarp','The best concrete nail','Customer satisfaction is our guarantee of being the leader in the manufacturing and distribution of concrete nails for more than 25 years Not only domestic market, our products come across to customers in regional country.','&copy Charoensarp 2013'];
-	this.l_th_headfoot = ['Diamond Brand','By Charoensarp','สุดยอดตะปูคอนกรีต','เราคือผู้นำด้านการผลิตและจำหน่ายตะปูคอนกรีตมากว่า 25 ปี คุณภาพและบริการได้รับการยอมรับจากตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้','&copy Charoensarp 2013'];
+	this.l_th_headfoot = ['Diamond Brand','By Charoensarp','สุดยอดตะปูคอนกรีต','เราคือผู้นำด้านการผลิตและจำหน่ายตะปูคอนกรีตมากว่า 25 ปี <br>คุณภาพและบริการได้รับการยอมรับจากตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้','&copy Charoensarp 2013'];
 	
 	this.l_nav_en = ['Home','Products','About & Contact'];
 	this.l_nav_th = ['หน้าแรก','สินค้า','เกี่ยวกับเรา'];
@@ -14,12 +14,12 @@ function diamond_brand(){
 	this.l_en_products = ['Product specification'];
 	this.l_th_products = ['โพรดัก สเปฟิเคชั่น'];
 	
-	this.l_en_about = ['Charoensarp Iron Wire Factory','Charoensarp Iron Wire Factory Co., Ltd.is established in 1987. We have been manufacturing and providing concrete nails, common nails, black annealed wire, and steal wire for using in construction industry for more than 25 years. Our principle is to provide good quality products at reasonable price. Also we have been trying our best to provide all items, on-time delivery, and guaranteed service for clients need. With high-quality material from Tata Steel, our product have been distributed to both domestic market and Southeast asian countries.'];
-	this.l_th_about = ['เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่','บริษัท เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่ จำกัด เป็นบริษัทที่ประกอบธุรกิจหลักในอุตสาหกรรมการผลิตและจำหน่าย ตะปูคอนกรีต ตะปูตอกไม้ ลวดอบดำ และลวดเหล็ก เพื่อใช้ในอุตสาหกรรมก่อสร้างมานานกว่า 25 ปี (ก่อตั้งในปี 2530)เราใส่ใจในทุกขั้นตอนการผลิต และมุ่งมั่นผลิตสินค้าที่มีคุณภาพสู่ตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้ ด้วยวัตถุดิบคุณภาพจากทาทา สตีลและให้บริการโดยคำนึงถึงความพึงพอใจสูงสุดของลูกค้า.'];
+	this.l_en_about = ['Charoensarp Iron Wire Factory','Charoensarp Iron Wire Factory Co., Ltd.is established in 1987. We have been manufacturing and providing concrete nails, common nails, black annealed wire, and steal wire for using in construction industry for more than 25 years. Our principle is to provide good quality products at reasonable price. Also we have been trying our best to provide all items, on-time delivery, and guaranteed service for clients need. With high-quality material from Tata Steel, our product have been distributed to both domestic market and Southeast asian countries'];
+	this.l_th_about = ['เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่','บริษัท เจริญทรัพย์ ไอออนไวร์ แฟคทอรี่ จำกัด เป็นบริษัทที่ประกอบธุรกิจหลักในอุตสาหกรรมการผลิตและจำหน่าย ตะปูคอนกรีต ตะปูตอกไม้ ลวดอบดำ และลวดเหล็ก เพื่อใช้ในอุตสาหกรรมก่อสร้างมานานกว่า 25 ปี (ก่อตั้งในปี 2530) <br>เราใส่ใจในทุกขั้นตอนการผลิต และมุ่งมั่นผลิตสินค้าที่มีคุณภาพสู่ตลาดทั้งในประเทศและภูมิภาคเอเชียตะวันออกเฉียงใต้ ด้วยวัตถุดิบคุณภาพจากทาทา สตีลและให้บริการโดยคำนึงถึงความพึงพอใจสูงสุดของลูกค้า'];
 	
 	
 	this.l_en_about_info = ['Contact Information','Tel: ','Email: ','Address: ','Bangpoo Industrial District, 657 Moo 2, Soi 1, Sukhumvit Rd., Bangpoomai, Muang, Samutprakarn, Thailand 10280'];
-	this.l_th_about_info = ['ติดต่อเราได้ที่','โทร: ','อีเมล์: ','ที่อยู่: ','นิคมอุตสาหกรรมบางปู, 657 หมู่ 2, ซอย 1, ถนนสุขุมวิท, ต.บางปูใหม่, อ.เมือง จ.สมุทรปราการ  10280'];
+	this.l_th_about_info = ['ติดต่อเราได้ที่','โทร: ','อีเมล์: ','ที่อยู่: ','นิคมอุตสาหกรรมบางปู, 657 หมู่ 2, ซอย 1, <br>ถนนสุขุมวิท, ต.บางปูใหม่, อ.เมือง จ.สมุทรปราการ  10280'];
 	
 	this.l_en_brandname = ['Diamond Brand','Eagle Brand','Lion Brand'];
     this.l_th_brandname = ['ตราเพชร','ตราอินทรีย์','ตราสิงโต'];
@@ -295,6 +295,8 @@ diamond_brand.prototype.change_language = function(lang)
 diamond_brand.prototype.click_active = function(name){
 	if(name == "home")
 	{
+		$('#banner').css('background-size','100% 100%');
+		
 		$('#homepage').show();
 		$('#carousel').show();
 		$('#productspage').hide();
@@ -318,6 +320,8 @@ diamond_brand.prototype.click_active = function(name){
 	}
 	else if (name == "aboutcontact") 
 	{
+		$('#banner').css('background-size','100% auto');
+		
 		$('#homepage').hide();
 		$('#carousel').hide();
 		$('#productspage').hide();
@@ -328,6 +332,8 @@ diamond_brand.prototype.click_active = function(name){
 		$('#aboutcontact').attr('class','font-footer active');
 	}
 	else {
+	    $('#banner').css('background-size','100% auto');
+	    
 		$('#homepage').hide();
 		$('#carousel').hide();
 		$('#productspage').show();

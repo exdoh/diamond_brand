@@ -1,6 +1,6 @@
-@font-face { font-family: "Roboto Light"; src: url(../fonts/Roboto-Light.ttf); }
+@font-face { font-family: "Roboto Light"; src: url(../fonts/Roboto-Light.eot); src: url(../fonts/Roboto-Light.eot) format("embedded-opentype"), url(../fonts/Roboto-Light.woff) format("woff"), url(../fonts/Roboto-Light.ttf) format("truetype"), url(../font/roboto-light.svg#RobotoLight) format("svg"); }
 
-@font-face { font-family: "Circular"; src: url(../fonts/Circular.ttf); }
+@font-face { font-family: "Circular"; src: url(../fonts/Circular.eot); src: url(../fonts/Circular.eot) format("embedded-opentype"), url(../fonts/Circular.woff) format("woff"), url(../fonts/Circular.ttf) format("truetype"), url(../font/circular.svg#CircularRegular) format("svg"); }
 
 html { height: 100%; }
 
@@ -30,7 +30,7 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 
 .subweight { font-weight: bold; }
 
-#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% auto; background-repeat: "no-repeat"; }
+#banner { background-image: url("../images/bg-bigbanner.png"); background-size: 100% 100%; background-repeat: "no-repeat"; }
 
 #wrap { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -50px; background: #dddddd; }
 
@@ -131,3 +131,5 @@ body.th .footer { background-color: #ff921a; line-height: 50px; }
 #about img { margin-left: 30px; }
 #about .img-circle { background: white; }
 #about .row { padding-bottom: 40px; }
+
+#text-footer { font-family: "Roboto Light"; font-size: 14px; }
