@@ -122,10 +122,9 @@ diamond_brand.prototype.render_products = function(){
 		    {
                             content += '<div class="span6">';
                             	content += '<div id="xxx">';
-                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png"></a>';
-                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.png"></a>';
-                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.png"></a>';
-                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/4.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/4.png"></a>';
+                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.jpg"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.jpg"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.jpg"></a>';
                             	content += '</div>';
                             content += '</div>';
                             content += '<div class="span6">';
@@ -169,10 +168,13 @@ diamond_brand.prototype.render_products = function(){
                                 content += '</div>';                      
                             content += '</div>';      
                             content += '<div class="span6">';
-                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.png"></a>';
-                            	content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.png"></a>';
-                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.png"></a>';
-                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/4.png"><img src="images/' + diamond_brand.div_name_slideto[i] + '/4.png"></a>';
+                                content += '<a class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/1.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/1.jpg"></a>';
+                            	
+                            	if(diamond_brand.div_name_slideto[i] != 'wire-mesh')
+                            	{
+                            	content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/2.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/2.jpg"></a>';
+                                content += '<a style="display:none" class="fancybox-thumbs" data-fancybox-group="thumb' + i + '" href="images/' + diamond_brand.div_name_slideto[i] + '/3.jpg"><img src="images/' + diamond_brand.div_name_slideto[i] + '/3.jpg"></a>';
+                                }
                             content += '</div>';
             }
                     content += '</div>';  
