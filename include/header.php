@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
+    <meta name="keywords" content="charoensarp,diamond,">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.ico">
 
