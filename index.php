@@ -62,7 +62,9 @@
 						<h1 id="for-more">For more infomation</h1>
 						<div id="tel" class="tel font-h3">Tel: (+66)2-323-3155-7</div>
 						<div id="fax" class="tel font-h3">Fax: (+66)2-323-4074</div>
-						<a href="mailto:diamondnail.cs@gmail.com" target="_top"><div id="email" class="font-h3">Email: diamondnail.cs@gmail.com</div></a>
+						<a href="mailto:sales1@charoensarp.com" target="_top">
+							<div id="email" class="font-h3">Email: sales1@charoensarp.com</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -145,7 +147,7 @@
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_email" class="subweight">Email: </span>
-									<span>diamondnail.cs@gmail.com</span>
+									<span>sales1@charoensarp.com</span>
 								</div>
 								<div class="datainfo font-footer">
 									<span id="info_address" class="subweight">Address: </span>

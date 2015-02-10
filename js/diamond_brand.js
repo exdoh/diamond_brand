@@ -8,8 +8,8 @@ function diamond_brand(){
 	this.l_en = ['ic-lang-en.png','English','Thai'];
 	this.l_th = ['ic-lang-th.png','อังกฤษ','ไทย'];
 	
-	this.l_en_home = ['more detail','Our quality products','For more infomation','Tel: (+66)2-323-3155-7','Fax: (+66)2-323-4074','Email: diamondnail.cs@gmail.com'];
-	this.l_th_home = ['รายละเอียดเพิ่มเติม','สินค้าคุณภาพของเรา','สอบถามข้อมูลเพิ่มเติมได้ที่','โทร: (+66)2-323-3155-7','โทรสาร: (+66)2-323-4074','อีเมล์: diamondnail.cs@gmail.com'];
+	this.l_en_home = ['more detail','Our quality products','For more infomation','Tel: (+66)2-323-3155-7','Fax: (+66)2-323-4074','Email: sales1@charoensarp.com'];
+	this.l_th_home = ['รายละเอียดเพิ่มเติม','สินค้าคุณภาพของเรา','สอบถามข้อมูลเพิ่มเติมได้ที่','โทร: (+66)2-323-3155-7','โทรสาร: (+66)2-323-4074','อีเมล์: sales1@charoensarp.com'];
 	
 	this.l_en_products = ['Product specification'];
 	this.l_th_products = ['โพรดัก สเปฟิเคชั่น'];
